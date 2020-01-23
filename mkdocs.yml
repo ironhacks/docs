@@ -1,5 +1,7 @@
-site_name: 'IronHacks Platform'
-# site_url:
+site_name: IronHacks Platform
+site_url: https://charrismatic.github.io/ironhacks-docs
+docs_dir: src
+site_dir: docs
 theme:
   name: readthedocs
   highlightjs: true
@@ -12,7 +14,7 @@ theme:
 # nav:
 #     - Home: index.md
 #     - About: about.md
-repo_url: https://github.com/example/repository/
+repo_url: https://github.com/charrismatic/ironhacks-docs
 repo_name: 'GitHub'
 # edit_uri:
 site_description: Ironhacks Platform Documentation Site
