@@ -1,0 +1,30 @@
+site_name: 'IronHacks Platform'
+# site_url:
+theme:
+  name: readthedocs
+  highlightjs: true
+# KEYBOARD SHORTCUTS http://keycode.info
+  shortcuts:
+      help: 191    # ?
+      next: 78     # n
+      previous: 80 # p
+      search: 83   # s
+# nav:
+#     - Home: index.md
+#     - About: about.md
+repo_url: https://github.com/example/repository/
+repo_name: 'GitHub'
+# edit_uri:
+site_description: Ironhacks Platform Documentation Site
+copyright: rcodi 2020
+remote_branch: gh-pages
+extra:
+    version: 1.0
+markdown_extensions:
+    - smarty
+    - extra
+    - toc
+    - meta
+    - tables
+    - fenced_code
+    - markdown_checklist.extension

@@ -1,8 +1,60 @@
+
+Starting the application
+
+Start the app in dev mode:
+
+```sh
+npm run start:dev
+```
+
+Make yourself an admin, by passing YOUR GitHub username (the username of the
+account you use to sign in for the first time):
+
+```sh
+ADMIN_USERNAME=<your-github-username> npm run start:dev
+```
+
+For example:
+
+```sh
+ADMIN_USERNAME=hackpurdue npm run start:dev
+```
+
+**Note**: The very first start takes up to 30 seconds because there is no
+existing cache. After the cache is created, the next application starts will be
+much faster (1-3 seconds).
+
+
+## Deploy
+
+When deployed to Heroku, the application url is `https://<app-name>.herokuapp.com` (unless it's using a custom domain).
+
+**Note:** When using a free dyno, it's working fine, but with some limitations:
+
+ - it's slower
+ - it's going to sleep if it's innactive for a certain period of time.
+ - it has bandwidth limits, but pretty liberal
+
+The app configuration is stored in the `bloggify.js` file.
+
+ 1. Make sure that the `heroku` remote exists (run `git remote -v` for that). If it doesn't exist, run:
+
+```sh
+heroku git:remote ironhackplatform
+```
+
+ 2. Commit all the changes and then run the following command:
+
+    ```sh
+    npm run deploy
+    ```
+
+
 ===============
-Forum structure 
+Forum structure
 ===============
 
-You may specify the number of forums that you would like to have under the admin interface. 
+You may specify the number of forums that you would like to have under the admin interface.
 
 =====================
 Qualtrix Integration
@@ -450,7 +502,7 @@ By accessing the `/new` endpoint, one can post a topic in their forum. They have
 The topic content can be styled with Markdown specific styles (bold, italic etc).
 
 ========================
-Display Page Manipulated 
+Display Page Manipulated
 ========================
 
 We display the scores of the users, on the `/scores` page. The users see the anonymous name of the users in the table. The displayed items in the table are shuffled each time.
