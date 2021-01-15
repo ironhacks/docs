@@ -5,14 +5,15 @@ on:
       - master
 
 jobs:
-  build:
-    name: Deploy docs
+  docs:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout master
-        uses: actions/checkout@v1
-
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build docs
+        uses: athackst/mkdocs-simple-plugin
+        with:
+          publish_branch: gh-pages
+          repo_url: https://github.com/${{ github.repository }}
+          site_name: ${{ github.repository }}
+          site_url: https://{{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
