@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="canonical" href="https://ironahcks.github.io/docs/App-Client/usage/">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Usage - IronHacks Platform</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../styles/custom.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Usage";
+    var mkdocs_page_input_path = "App-Client/usage.md";
+    var mkdocs_page_url = "/docs/App-Client/usage/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> IronHacks Platform</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">App Client</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../functions/">Functions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../install/">Install</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../overview/">Preparation</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Usage</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#comment">Comment</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#settings">Settings</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stats">Stats</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#topic">Topic</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#user">User</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-stats-we-collect">What stats we collect</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Cloud Api</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Cloud-Api/overview/">Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Cloud-Api/requirements/">Requirements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Cloud-Api/setup/">Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Cloud-Api/usage/">Usage</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developer Documentation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Documentation/overview/">Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Documentation/references/">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Platform Documentation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Platform-Documentation/admin/">Admin</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Platform-Documentation/hacks/">Hacks</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Platform-Documentation/metrics/">Platform Metrics</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">IronHacks Platform</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>App Client &raquo;</li>
+        
+      
+    
+    <li>Usage</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/ironhacks/docs/blob/master/src/App-Client/usage.md"> Edit on docs</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Starting the application</p>
+<p>Start the app in dev mode:</p>
+<pre><code class="language-sh">npm run start:dev
+</code></pre>
+<p>Make yourself an admin, by passing YOUR GitHub username (the username of the
+account you use to sign in for the first time):</p>
+<pre><code class="language-sh">ADMIN_USERNAME=&lt;your-github-username&gt; npm run start:dev
+</code></pre>
+<p>For example:</p>
+<pre><code class="language-sh">ADMIN_USERNAME=hackpurdue npm run start:dev
+</code></pre>
+<p><strong>Note</strong>: The very first start takes up to 30 seconds because there is no
+existing cache. After the cache is created, the next application starts will be
+much faster (1-3 seconds).</p>
+<h2 id="deploy">Deploy</h2>
+<p>When deployed to Heroku, the application url is <code>https://&lt;app-name&gt;.herokuapp.com</code> (unless it&rsquo;s using a custom domain).</p>
+<p><strong>Note:</strong> When using a free dyno, it&rsquo;s working fine, but with some limitations:</p>
+<ul>
+<li>it&rsquo;s slower</li>
+<li>it&rsquo;s going to sleep if it&rsquo;s innactive for a certain period of time.</li>
+<li>it has bandwidth limits, but pretty liberal</li>
+</ul>
+<p>The app configuration is stored in the <code>bloggify.js</code> file.</p>
+<ol>
+<li>Make sure that the <code>heroku</code> remote exists (run <code>git remote -v</code> for that). If it doesn&rsquo;t exist, run:</li>
+</ol>
+<pre><code class="language-sh">heroku git:remote ironhackplatform
+</code></pre>
+<ol>
+<li>
+<p>Commit all the changes and then run the following command:</p>
+<p><code>sh
+npm run deploy</code></p>
+</li>
+</ol>
+<p>===============
+Forum structure
+===============</p>
+<p>You may specify the number of forums that you would like to have under the admin interface.</p>
+<p>=====================
+Qualtrix Integration
+=====================</p>
+<p>All the quizzes created on the Qualtrics platform have a snippet of JavaScript which stores the user data in the response (as known as <em>Embedded data</em>).</p>
+<p>We store the <code>user_email</code> and the <code>user_id</code> which are sent in the url.</p>
+<p>The code in the Qualtrics quizzes is set in the last block, last question (which may happen to be an empty question, used for tracking):</p>
+<p>This approach is being used for all the quizzes: the sign up survey and the other technical quizzes.</p>
+<p>===============================
+Login and Registration Process
+===============================</p>
+<p>When the user is not authenticated, the main page displays two buttons:
+a login button and a <kbd>Sign up</kbd> button.</p>
+<p>When the login button is clicked, the <code>/login</code> url is opened.
+The login url redirects to the GitHub authentication workflow (OAuth2) where the user should accept access of our GitHub app in their GitHub account.</p>
+<p>The difference between the <kbd>Sign in</kbd> and <kbd>Sign up</kbd> buttons is that for the sign in,
+we assume that the user already has an account, therefore we make the redirection
+to GitHub APIs and authenticate them with their GitHub account. In case they do
+<em>not</em> have an account on the site, they will have to choose the hack type <em>after</em>
+the GitHub authentication.</p>
+<p>In <kbd>Sign up</kbd> case we will assume that the user doesn&rsquo;t have an account yet, therefore
+we ask them to choose the hack type and only then the GitHub authentication is
+made. Still, if an existing user clicks the <kbd>Sign up</kbd> button, they will log in
+into their account anyways.</p>
+<p>This is the authentication workflow:</p>
+<p><img alt="" src="http://i.imgur.com/b0RRhc6.png" /></p>
+<p>In the <code>controllers/register.js</code> file, we create a new user or authenticate an existing user.
+For the first-time users, we display the selection of the hack type: Purdue, Bogota and Platzi, and then redirect to the survey.
+At this moment, we start a session on the server side, but we don&rsquo;t write any data in the users&rsquo; database yet.</p>
+<p>After the user completes the survey, they are redirected back, and the user account is created.</p>
+<p>To redirect the users to the survey, we send the <code>Location</code> header from the server to the client. Additional data is added in the url parameters to track the user:</p>
+<ul>
+<li><code>email</code>: The email of the user</li>
+<li><code>user_id</code>: The user id</li>
+<li><code>redirect_to</code>: The redirection url where they will arrive after answering the survey.</li>
+</ul>
+<p>Using a JavaScript snippet in the survey page we store the email and the user id in the survey answer and we detect when the survey is done and redirect the users back to the app.</p>
+<p>When they finish the survey, they are redirected to the main app and the account is created.</p>
+<p>When creating a user account, we do <em>not</em> assign a <code>hack_id</code> to the user but we wait until the contest is started.
+The <code>hack_id</code> is a number based on which we create multiple forums inside of the same hack type.
+The range can be configured in the admin dashboard.</p>
+<p>If the user is already registered, they are authenticated based on the existing data.</p>
+<p>The <code>hack_id</code> values are assigned either when the user signs up (if the contest is already started) or when the contest starts.
+The default value for <code>hack_id</code> is <code>null</code>. This is changed automatically when the contest starts.</p>
+<p>The algorithm which assigns the hack ids is designed to create groups of an equal number of users.
+Specifically, the user will join in the hack id with the fewest users at that moment.</p>
+<p>The database query is: find how many users we have in each hack id, for a given hack type.
+Then, join the current user in the hack id with the fewest users.</p>
+<pre><code class="language-js">function generateGetHackId(hType, name) {
+    return cb =&gt; {
+        User.model.aggregate([{
+            $match: {
+                &quot;profile.hack_id&quot;: { $ne: null },
+                &quot;profile.hack_type&quot;: name
+            }
+        }, {
+            $group: {
+                _id: &quot;$profile.hack_id&quot;,
+                total: { $sum: 1 }
+            }
+        }], (err, docs) =&gt; {
+            if (err) { return cb(0); }
+            const ids = Array(hType.subforums_count + 1).fill(0);
+            docs.forEach(c =&gt; {
+                ids[c._id] = c.total;
+            });
+            let minId = 0;
+            let min = ids[minId];
+            ids.forEach((count, index) =&gt; {
+                if (count &lt; min) {
+                    minId = index;
+                    min = ids[minId];
+                }
+            });
+            cb(minId);
+        });
+    };
+}
+
+forEach(HACK_TYPES, (c, name) =&gt; {
+    c.getHackId = generateGetHackId(c, name);
+});
+</code></pre>
+<p>The function which assigns the hack id values to the users is in the <code>HackTypes</code> controller (<code>app/controllers/HackTypes.js</code>).</p>
+<p>This function receives as input a hack type object and groups the users inside of the hack type.</p>
+<pre><code class="language-js">const assignHackIdsToUsers = hType =&gt; {
+    const usersCursor = User.model.find({
+        &quot;profile.hack_id&quot;: null,
+        &quot;profile.hack_type&quot;: hType.name
+    }).cursor();
+
+    usersCursor.on(&quot;data&quot;, cDoc =&gt; {
+        usersCursor.pause();
+        hType.getHackId(uHackId =&gt; {
+            User.update({
+                _id: cDoc._id
+            }, {
+                profile: {
+                    hack_id: uHackId
+                }
+            }, (err, data) =&gt; {
+                if (err) { Bloggify.log(err); }
+                usersCursor.resume();
+            });
+        });
+    });
+
+    usersCursor.on(&quot;error&quot;, err =&gt; {
+        Bloggify.log(err);
+    });
+
+    usersCursor.on(&quot;end&quot;, cDoc =&gt; {
+        Bloggify.log(`Grouped the studends from ${hType.name}.`);
+    });
+};
+</code></pre>
+<p>The function above is called when the countdown finishes, being triggered by a
+scheduler:</p>
+<pre><code class="language-js">const setScheduleForHackType = name =&gt; {
+    if (name.name) {
+        name = name.name;
+    }
+
+    let hackTypeObj = HACK_TYPES[name];
+    if (hackTypeObj.startSchedule) {
+        hackTypeObj.startSchedule.cancel();
+    }
+
+    hackTypeObj.startSchedule = schedule.scheduleJob(hackTypeObj.start_date, () =&gt; {
+        assignHackIdsToUsers(hackTypeObj);
+    });
+};
+</code></pre>
+<p>Or, it may be triggered when we make changes in the admin dashboard, changing the
+start of the contest.</p>
+<pre><code class="language-js">if (new Date() &gt; thisHackType.start_date) {
+    if (thisHackType.startSchedule) {
+        thisHackType.startSchedule.cancel();
+    }
+    assignHackIdsToUsers(thisHackType);
+} else {
+    setScheduleForHackType(thisHackType);
+}
+</code></pre>
+<p>To catch the <code>save</code> event, we add a hook using the <code>addHook</code> method defined
+by the <a href="https://github.com/Bloggify/bloggify-mongoose"><code>bloggify-mongoose</code></a> plugin.</p>
+<pre><code class="language-js">Settings.model.addHook(&quot;post&quot;, &quot;save&quot;, update);
+</code></pre>
+<p>========
+Quizzes
+========</p>
+<p>The quizzes page displays the quizzes that can be taken by the user. The user may answer the same quiz multiple times.</p>
+<p>In the view file (<code>app/routes/quizzes.ajs</code>) we have the part which renders the links to each quiz:</p>
+<pre><code class="language-erb">&lt;% include(&quot;../views/header&quot;, { title: &quot;Quizzes&quot; }) %&gt;
+&lt;% include(&quot;../views/container/start&quot;) %&gt;
+&lt;h1&gt;Quizzes&lt;/h1&gt;
+
+&lt;% quizzes.forEach(function (quiz) { %&gt;
+    &lt;a class=&quot;btn&quot; href=&quot;&lt;%= quiz.url %&gt;&quot;&gt;&lt;%= quiz.label %&gt;&lt;/a&gt;
+&lt;% }); %&gt;
+
+&lt;% include(&quot;../views/container/end&quot;) %&gt;
+&lt;% include(&quot;../views/footer&quot;) %&gt;
+</code></pre>
+<p>The data associated with this view is storred in the controller (<code>app/controllers/quizzes.js</code>)–see below. The user can click the generated link which contains information about the user (the email address and the user id)–which are storred in the Qualtrics quiz responses as embedded data, and also the redirect url.
+When the user finishes the quiz, they are redirected back the application, on the <code>/quizzes</code> page and the application marks the quiz complete internally. Even the quiz was completed, the user can take it again.</p>
+<pre><code class="language-js">const Bloggify = require(&quot;bloggify&quot;)
+    , Session = require(&quot;./Session&quot;)
+    , User = require(&quot;./User&quot;)
+    , findValue = require(&quot;find-value&quot;)
+    ;
+
+// Define the quizzes list
+const quizzes = [
+    [&quot;d3.js&quot;, &quot;https://purdue.qualtrics.com/jfe/form/SV_71xEzp5vQ7rC817&quot;, &quot;d3&quot;]
+  , [&quot;HTML &amp; CSS&quot;, &quot;https://purdue.qualtrics.com/jfe/form/SV_do6Sc9VJsAMmOih&quot;, &quot;html_css&quot;]
+  , [&quot;JavaScript &amp; jQuery&quot;, &quot;https://purdue.qualtrics.com/jfe/form/SV_b8zyxX8wozQfNul&quot;, &quot;javascript_jquery&quot;]
+];
+
+// Map the quizzes labels to the data
+const validQuizzes = {};
+quizzes.forEach(c =&gt; {
+    validQuizzes[c[2]] = c;
+});
+
+module.exports = (lien, cb) =&gt; {
+    const user = Session.getUser(lien);
+    if (!user) { return lien.redirect(&quot;/&quot;); }
+
+    // Set the quiz complete
+    const completed = lien.query.markComplete;
+    if (completed &amp;&amp; validQuizzes[completed]) {
+        return User.update({
+            _id: user._id
+        }, {
+            profile: {
+                surveys: {
+                    [completed]: {
+                        ended_at: new Date()
+                    }
+                }
+            }
+        }, (err, _user) =&gt; {
+            lien.redirect(&quot;/quizzes&quot;);
+        })
+    }
+
+    // Generate the redirect links
+    const completedSurveys = findValue(user, &quot;profile.surveys&quot;) || {};
+    const userQuizzes = quizzes.map(c =&gt; {
+        const redirectTo =  encodeURIComponent(`${Bloggify.options.metadata.domain}/quizzes?markComplete=${c[2]}`);
+        return {
+            label: c[0]
+          , url: `${c[1]}?redirect_to=${redirectTo}&amp;user_email=${user.email}&amp;user_id=${user._id}`
+          , is_complete: !!completedSurveys[c[2]]
+        };
+    });
+
+    // Send the quizzes array to the view
+    cb(null, {
+        quizzes: userQuizzes
+    });
+};
+</code></pre>
+<p>========
+Search
+========</p>
+<p>On the search page (<code>/search</code>) we can search for content which appears either in the post data or in the comments.</p>
+<p>The view associated with this page is storred in the <code>app/routes/search.ajs</code> and it looks like this:</p>
+<pre><code class="language-erb">&lt;% include(&quot;../views/header&quot;, { title: &quot;Search&quot; }) %&gt;
+&lt;% include(&quot;../views/container/start&quot;) %&gt;
+&lt;h1&gt;Search&lt;/h1&gt;
+&lt;div class=&quot;search-form-wrapper&quot;&gt;
+    &lt;% include(&quot;../views/search-form&quot;) %&gt;
+&lt;/div&gt;
+&lt;% if (f(&quot;results&quot;)) { %&gt;
+    &lt;p class=&quot;search-results-text&quot;&gt;Search results for &lt;em&gt;‘&lt;%= lien.query.search %&gt;’&lt;/em&gt;&lt;/p&gt;
+    &lt;div class=&quot;search-results&quot;&gt;
+        &lt;% if (results.length) { %&gt;
+            &lt;% results.forEach(function (cResult) { %&gt;
+                &lt;div class=&quot;seach-result-item&quot;&gt;
+                    &lt;h2&gt;
+                        &lt;a href=&quot;&lt;%= cResult.url %&gt;&quot;&gt;
+                            &lt;%= cResult.title %&gt;
+                        &lt;/a&gt;
+                    &lt;/h2&gt;
+                &lt;/div&gt;
+            &lt;% }) %&gt;
+        &lt;% } else { %&gt;
+            &lt;div class=&quot;no-search-results&quot;&gt;
+                There are no results. Maybe try a different query.
+            &lt;/div&gt;
+        &lt;% } %&gt;
+    &lt;/div&gt;
+&lt;% } %&gt;
+&lt;% include(&quot;../views/container/end&quot;) %&gt;
+&lt;% include(&quot;../views/footer&quot;) %&gt;
+</code></pre>
+<p>This file requires the <code>search-form</code> which appears in the <code>app/views/search-form.ajs</code> file, representing the search form itself:</p>
+<pre><code class="language-erb">&lt;form&gt;
+    &lt;input type=&quot;text&quot; name=&quot;search&quot; value=&quot;&lt;%= lien.query.search || &quot;&quot; %&gt;&quot; placeholder=&quot;Search for something...&quot; /&gt;
+&lt;/form&gt;
+</code></pre>
+<p>When the user submits the query, the <code>?search=&lt;query&gt;</code> querystring parameter is added in the url, triggering the search functionality in the controller (located in <code>app/controllers/search.js</code>). To increase the search results accuracy we used the internal MongoDB text search indexes like this: we created text indexes for the topic title and content and comment content, using the <code>text: true</code> in the model configuration:</p>
+<p><strong><code>app/models/Topic.js</code></strong>:</p>
+<pre><code class="language-js">module.exports = {
+    ...
+    title: {
+        type: String,
+        text: true
+    },
+    ...
+    body: {
+        type: String,
+        text: true
+    },
+    ...
+};
+</code></pre>
+<p><strong><code>app/models/Comment.js</code></strong>:</p>
+<pre><code class="language-js">module.exports = {
+    ...
+    body: {
+        type: String,
+        text: true
+    },
+    ...
+};
+</code></pre>
+<p><strong>Note</strong>: The admin users will see the search results from all the forums, while the simple users will see the search results from the forum they belong to.</p>
+<p>The controller which takes care of searching looks like this:</p>
+<pre><code class="language-js">const Session = require(&quot;./Session&quot;)
+    , Topic = require(&quot;./Topic&quot;)
+    , Comment = require(&quot;./Comment&quot;)
+    ;
+
+module.exports = (lien, cb) =&gt; {
+
+    const user = Session.getUser(lien);
+    if (!user) {
+        return lien.redirect(&quot;/&quot;);
+    }
+
+    const isAdmin = Session.isAdmin(user);
+
+    // Perform the search query
+    if (lien.query.search) {
+
+        // Use the $text index to search
+        const filters = {
+            $text: {
+                $search: lien.query.search
+            }
+        };
+        let results = {};
+
+        // Search in the topics and comments
+        Promise.all([
+            Topic.model.find(filters)
+          , Comment.model.find(filters)
+        ]).then(data =&gt; {
+            results.topics = data[0];
+            results.comments = data[1].map(c =&gt; c.toObject());
+            return Promise.all(results.comments.map(cComment =&gt; {
+                return Topic.model.findOne({ _id: cComment.topic });
+            }));
+        }).then(topics =&gt; {
+            let uniqueTopics = {};
+            results.topics.concat(topics).forEach(c =&gt; {
+                if (!c) { return; }
+
+                // Let the admin see all the posts/comments in all the forums
+                if (!isAdmin) {
+                    if (c.metadata.hack_type !== user.profile.hack_type ||
+                        c.metadata.hack_id !== user.profile.hack_id) {
+                        return;
+                    }
+                }
+                uniqueTopics[c._id] = c;
+                c.url = Topic.getUrl(c);
+            });
+
+            cb(null, { results: Object.keys(uniqueTopics).map(k =&gt; uniqueTopics[k]) });
+        }).catch(e =&gt; {
+            cb(e);
+        });
+    } else {
+        cb();
+    }
+};
+</code></pre>
+<p>==========
+Posts Page
+==========</p>
+<p>For authenticated users, we display the posts on the first page, ordered by the date, but the sticky posts are always the first ones. Only the admin users can make create sticky posts (or edit a post and make it sticky).</p>
+<p>Here, the users from a specific forum can see and upvote the posts from the same forum. They can click on the post urls and post comments.</p>
+<p>=====================
+Single Posts Page
+=====================</p>
+<p>The single post pages are accessible by authenticated users only. They display the post title, body, votes and comments.</p>
+<p>In case somebody comments, the comments are updated in real-time, the votes too.</p>
+<p>When a user opens a topic page, we collect stats about that event:</p>
+<ul>
+<li><code>actor</code>: the user id who clicked the button</li>
+<li><code>topic_id</code>: the topic id</li>
+<li><code>phase</code>: the phase of the project</li>
+<li><code>created_at</code>: the timestamp</li>
+</ul>
+<p>=====================
+Posting a New Topic
+=====================</p>
+<p>By accessing the <code>/new</code> endpoint, one can post a topic in their forum. They have to write the title and the topic content.</p>
+<p>The topic content can be styled with Markdown specific styles (bold, italic etc).</p>
+<p>========================
+Display Page Manipulated
+========================</p>
+<p>We display the scores of the users, on the <code>/scores</code> page. The users see the anonymous name of the users in the table. The displayed items in the table are shuffled each time.</p>
+<p>If in the admin interface the scores are not provided, the scores collumns will not appear in the scores. In a similar way it happens for the urls: if we don&rsquo;t enter the urls, the urls collumns will not appear in the scores page.</p>
+<p>When the user clicks on the <kbd>View scores</kbd> button, we collect stats:</p>
+<ul>
+<li><code>actor</code>: the user id who clicked the button</li>
+<li><code>hacker_id</code>: the user from the table which was clicked</li>
+<li><code>phase</code>: the phase of the project</li>
+<li><code>created_at</code>: the timestamp</li>
+</ul>
+<p>Similar things happen when one clicks the Project url or the GitHub repository url. We know what was clicked and who did it.</p>
+<p>In the scores controller (the <code>controllers/scores.js</code> file) a query to fetch the users from a certain forum is made. Then we get the active scores and urls for the current phase of the contest and create an array which is passed to the scores view.
+To keep the users semi-anonymous, we change the usernames into <code>Hacker {1-...}</code>. Then the users array is shuffled.</p>
+<p>This is the code snippet which fetches the users, modifies the usernames and shuffles the array.</p>
+<pre><code class="language-js">User.model.find({
+    &quot;profile.hack_type&quot;: user.profile.hack_type,
+    &quot;profile.hack_id&quot;: user.profile.hack_iand usls for the current phase of the contest and create an array which is passed to the scores view.
+}, (err, users) =&gt; {
+    if (err) { return cb(err); }
+    Settings.get((err, options) =&gt; {
+        if (err) { return cb(err); }
+        const phase = options.settings.hack_types[user.profile.hack_type].phase;
+        users = users.map((u, i) =&gt; {
+            u = u.toObject();
+            u.username = `Hacker ${i + 1}`;
+            const phaseObj = Object(u.profile[phase]);
+            return {
+                _id: u._id,
+                username: u.username,
+                score_technical: phaseObj.score_technical,
+                score_info_viz: phaseObj.score_info_viz,
+                score_novelty: phaseObj.score_novelty,
+                score_total: phaseObj.score_total,
+                project_url: phaseObj.project_url,
+                github_repo_url: phaseObj.github_repo_url
+            };
+        });
+
+        shuffle(users);
+
+        cb(null, {
+            users: users,
+            phase: phase
+        });
+    });
+});
+</code></pre>
+<p>The <code>shuffle</code> function is a basic algorithm of shuffling the elements from a given array:</p>
+<pre><code class="language-js">function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+</code></pre>
+<p>================
+Admin Interface
+================</p>
+<p>An admin can access additional functionality (such as deleting and editing any post).
+They have access to the dashboard (<code>/admin</code>) where they can make other users admins.
+If nobody is admin (say there are no users), we can make somebody an admin (even if
+they don&rsquo;t exist <em>yet</em> in the database) by assiging the GitHub username of an eventual
+user to the environment variable called <code>ADMIN_USERNAME</code>.</p>
+<p>The <code>ADMIN_USERNAME</code> environment variable represents the GitHub username of the user
+which should be an admin (this user cannot be a simple user anymore, nobody being
+able to remove the admin rights from them). When they are going to log in,
+they will be authenticated as admin.</p>
+<p>To set the <code>ADMIN_USERNAME</code> variable, there are multiple ways, but the easiest ones are:</p>
+<ul>
+<li>
+<p>If the application runs in a Heroku environment, the variable can be set from the
+   browser interface: <code>https://dashboard.heroku.com/apps/&lt;app-name&gt;/settings</code>, by
+   clicking the <code>Reveal Config Vars</code> button or in the command line using:</p>
+<p><code>sh
+heroku config:set ADMIN_USERNAME=hackpurdue</code></p>
+<p>Note: after setting an enviroment variable on Heroku (either from the
+command line) or from the browser interface, the application will be
+restarted automatically.</p>
+</li>
+<li>
+<p>When running locally, the environment variable can be set when starting the app:</p>
+<p><code>sh
+ADMIN_USERNAME=hackpurdue npm run start:dev</code></p>
+</li>
+</ul>
+<p>In the admin interface, the admin can:</p>
+<ol>
+<li>Change the Phase.</li>
+<li>Download the CSV stats.</li>
+<li>Set the start dates for each hack type.</li>
+<li>See all the users and update the scores for each and eventually make them admins.</li>
+</ol>
+<p>In case another user is made admin, they should log out (if they are authenticated) and log in back.</p>
+<p>==================================
+Custom Database Filters for Admins
+==================================</p>
+<p>For simple users, the database queries include the <code>author</code>, being the current authenticated user.
+When the user has admin permissions, we do not append anymore the <code>author</code> the queries, therefore making the queries more liberal, giving more power to the admin.</p>
+<p>For instance, when deleting a post, the user will create the following query:</p>
+<p><em>delete the post with <code>_id</code>=&hellip; and <code>author=...</code></em></p>
+<p>Therefore, if the user tries to delete another post, having the id, that post will not be found because it is not created by the authenticated user.</p>
+<p>Tho, if the user is an admin, the query is simpler, lacking the <code>author</code> field (we want to give them the power to delete any post):</p>
+<p>*delete the post with <code>_id=...</code> *</p>
+<p>This is happening in the <code>app/controllers/posts/_topicId-_slug/delete.js</code> controller:</p>
+<pre><code class="language-js">const Topic = require(&quot;../../Topic&quot;)
+    , Session = require(&quot;../../Session&quot;)
+    ;
+
+exports.post = (lien, cb) =&gt; {
+    const user = Session.getUser(lien);
+    if (!user) {
+        return lien.next();
+    }
+
+    const filters = {
+        _id: lien.params.topicId
+    };
+
+    if (!Session.isAdmin(user)) {
+         filters.author = user._id;
+    }
+
+    Topic.remove(filters, (err, count) =&gt; {
+        if (err) { return lien.apiError(err); }
+        lien.redirect(&quot;/&quot;);
+    })
+};
+</code></pre>
+<p>=====================
+Application Structure
+=====================</p>
+<p>In the <code>routes</code> folder, we have the page templates which are linked to the controllers from the <code>controllers</code> folder.</p>
+<pre><code>routes/
+├── 404.ajs
+├── 500.ajs
+├── admin.ajs
+├── countdown.ajs
+├── index.ajs
+├── logout.ajs
+├── new.ajs
+├── posts
+│   ├── index.ajs
+│   └── _topicId-_slug
+│       ├── comments.ajs
+│       ├── delete.ajs
+│       ├── edit.ajs
+│       ├── index.ajs
+│       └── toggle-vote.ajs
+├── quizzes.ajs
+├── register.ajs
+├── scores.ajs
+├── search.ajs
+└── users
+    └── _user
+        ├── edit.ajs
+        └── index.ajs
+</code></pre>
+<p>The <code>_</code> character marks a dynamic route (such as a topic id/slug, or user).</p>
+<p>The controllers are:</p>
+<pre><code>controllers/
+├── admin.js
+├── Comment.js
+├── countdown.js
+├── HackTypes.js
+├── index.js
+├── login.js
+├── logout.js
+├── new.js
+├── posts
+│   └── _topicId-_slug
+│       ├── comments.js
+│       ├── delete.js
+│       ├── edit.js
+│       ├── index.js
+│       └── toggle-vote.js
+├── quizzes.js
+├── register.js
+├── scores.js
+├── search.js
+├── Session.js
+├── Settings.js
+├── Stats.js
+├── Topic.js
+├── User.js
+└── users
+    └── _user
+        ├── edit.js
+        └── index.js
+</code></pre>
+<p>========
+Modules
+========</p>
+<p>In this application we use the following main modules:</p>
+<p>=====================
+Database Connection
+=====================
+To connect with the database the <a href="https://github.com/Bloggify/bloggify-mongoose"><code>bloggify-mongoose</code></a> module was used.
+The database models are stored in the <code>app/models</code> directory:</p>
+<pre><code>models/
+├── Comment.js
+├── Settings.js
+├── Stats.js
+├── Topic.js
+└── User.js
+</code></pre>
+<p>To see the raw database collections and documents, we can connect directly using the MongoDB CLI:</p>
+<pre><code class="language-sh">mongo ....mlab.com:63758/heroku_... -u &lt;dbuser&gt; -p &lt;dbpassword&gt;
+</code></pre>
+<p>or we can see that in the browser:</p>
+<ol>
+<li>Open the application <em>Overview</em>  page <code>https://dashboard.heroku.com/apps/ironhackplatform</code></li>
+<li>
+<p>Clik the <code>mLab MongoDB</code>. This will redirect to an url like this:</p>
+<p><code>https://www.mlab.com/databases/heroku_...</code>
+ 3. On this page, we can see the collections and eventually the documents and edit them.</p>
+</li>
+</ol>
+<p>The models we interact with are:</p>
+<h6 id="comment"><code>Comment</code></h6>
+<p>Stores the comments in the <code>comments</code> collection.</p>
+<pre><code class="language-js">module.exports = {
+    author: &quot;string&quot;,
+    body: {
+        type: String,
+        text: true
+    },
+    created_at: &quot;date&quot;,
+    topic: &quot;string&quot;,
+    votes: [&quot;string&quot;]
+};
+</code></pre>
+<h6 id="settings"><code>Settings</code></h6>
+<p>Stores the application settings.</p>
+<pre><code class="language-sh">module.exports = {
+    settings: &quot;object&quot;
+};
+</code></pre>
+<h6 id="stats"><code>Stats</code></h6>
+<p>Used to store the stats we collect.</p>
+<pre><code class="language-js">module.exports = {
+    actor: &quot;string&quot;,
+    metadata: &quot;object&quot;,
+    event: &quot;string&quot;,
+    created_at: &quot;date&quot;
+};
+</code></pre>
+<p>In this collection we save the user events. See below what stats we collect.</p>
+<h6 id="topic"><code>Topic</code></h6>
+<p>Stores the topics in the <code>topics</code> collection.</p>
+<pre><code class="language-js">module.exports = {
+    author: &quot;string&quot;,
+    title: {
+        type: String,
+        text: true
+    },
+    slug: &quot;string&quot;,
+    body: {
+        type: String,
+        text: true
+    },
+    created_at: &quot;date&quot;,
+    votes: [&quot;string&quot;],
+    sticky: &quot;boolean&quot;,
+    metadata: &quot;object&quot;
+};
+</code></pre>
+<h6 id="user"><code>User</code></h6>
+<p>Stores the users in the <code>users</code> collection.</p>
+<pre><code class="language-js">module.exports = {
+    username: &quot;string&quot;,
+    email: &quot;string&quot;,
+    password: &quot;string&quot;,
+    profile: &quot;object&quot;,
+    role: &quot;string&quot;
+};
+</code></pre>
+<h5 id="what-stats-we-collect">What stats we collect</h5>
+<p>We collect stats when the user:</p>
+<ul>
+<li>clicks the <kbd>View scores</kbd> button</li>
+<li>opens a topic page</li>
+</ul>
+<p>The stats are collected by making HTTP requests to the server, using the
+<code>fetch</code> technology (it&rsquo;s a new browser API, similar to <code>XHRHttpRequest</code>).</p>
+<p>The code snippets that take care of this is located in <code>app/assets/javascripts/util/index.js</code>:</p>
+<pre><code class="language-js">...
+    /**
+     * post
+     * Posts the data to the server.
+     *
+     * @name post
+     * @function
+     * @param {String} url The endpoint url.
+     * @param {Object} data The post data.
+     * @returns {Promise} The `fetch` promise.
+     */
+  , post (url, data) {
+        data._csrf = data._csrf || _pageData.csrfToken;
+        return fetch(url, {
+            method: &quot;POST&quot;,
+            headers: {
+                &quot;Content-Type&quot;: &quot;application/json&quot;
+            },
+            credentials: &quot;same-origin&quot;,
+            body: JSON.stringify(data)
+        });
+    }
+
+    /**
+     * getJSON
+     * Fetches from the server JSON data.
+     *
+     * @name getJSON
+     * @function
+     * @param {String} url The endpoint url.
+     * @returns {Promise} The `fetch` promise.
+     */
+  , getJSON (url) {
+        return fetch(url, {
+            credentials: &quot;same-origin&quot;
+        }).then(c =&gt; c.json())
+    }
+...
+</code></pre>
+<p>That&rsquo;s the low-level side of sending/receiving any data to/from the server using
+<code>fetch</code>. Note: some browsers don&rsquo;t have the <code>fetch</code> technology, therefore we use
+a <a href="https://github.com/github/fetch">polyfill created by GitHub</a> to ensure the function is there.</p>
+<p>We collect three types of stats:</p>
+<ol>
+<li>
+<p><code>view-topic</code></p>
+<p>Emitted when the user opens a topic.</p>
+<p>Metadata:</p>
+<ul>
+<li><code>topic_id</code>: The topic id.</li>
+<li><code>topic_author</code>: The user id of the topic author.</li>
+</ul>
+<p>Code snippet:</p>
+<p><code>js
+util.post("/api/stats", {
+    event: "view-topic",
+    metadata: {
+        topic_id: topic._id,
+        topic_author: topic.author._id
+    }
+});</code></p>
+</li>
+<li>
+<p><code>score-click</code></p>
+<p>Emitted when the user clicks the <kbd>View scores</kbd> button.</p>
+<p>Metadata:</p>
+<ul>
+<li><code>hacker_id</code>: The user that <em>was clicked</em>.</li>
+</ul>
+<p>Code snippet:</p>
+<p><code>js
+util.post("/api/stats", {
+    event: "score-click",
+    metadata: {
+        hacker_id: this.props.hacker._id
+    }
+});</code></p>
+</li>
+<li>
+<p>Clicks on the urls.</p>
+<p>The following events are emitted:</p>
+<ul>
+<li><code>click-project-url</code>: When clicking the project url.</li>
+<li><code>click-github-repo-url</code>: When clicking the GitHub repository url.</li>
+</ul>
+<p>Metadata:</p>
+<ul>
+<li><code>hacker_id</code>: The hacker id from the table.</li>
+<li><code>url</code>: The clicked url.</li>
+</ul>
+<p>Code snippet:</p>
+<p><code>js
+util.post("/api/stats", {
+    event: e.target.dataset.event,
+    metadata: {
+        hacker_id: this.props.hacker._id,
+        url: e.target.href
+    }
+});</code></p>
+</li>
+</ol>
+<p><strong>The stats functionality on the server</strong>:</p>
+<p>On the server, we create a custom endpoint at <code>/api/stats</code> which expects <code>POST</code>
+data. We do not collect any stats from unauthenticated users.</p>
+<p>Along with the metadata we receive from the client side (see above) we add in the
+stat object the following information:</p>
+<ul>
+<li><code>actor</code>: The current authenticated user id.</li>
+<li><code>event</code>: The event name.</li>
+<li><code>user_agent</code>: The user agent: this contains device and browser information.</li>
+<li><code>phase</code>: The phase of the contest.</li>
+</ul>
+<p>The <code>actor</code> is the authenticated user id, and it will always be appended in the
+event object because we know there is an authenticated user.</p>
+<p>After we build the stats object, we call the <code>Stats.record</code> which will record
+the event in the database. The <code>record</code> method is not anything more than just
+a create query, after appending the <code>created_at</code> field in the event object.</p>
+<pre><code class="language-js">Bloggify.server.addPage(&quot;/api/stats&quot;, &quot;post&quot;, lien =&gt; {
+    const user = Session.getUser(lien);
+
+    if (!user) {
+        return lien.next();
+    }
+
+    const ev = {
+        actor: user._id,
+        event: lien.data.event,
+        metadata: lien.data.metadata || {}
+    };
+
+    ev.metadata.user_agent = lien.header(&quot;user-agent&quot;);
+
+    Settings.get((err, settings) =&gt; {
+        if (settings) {
+            ev.metadata.phase = settings.settings.hack_types[user.profile.hack_type].phase;
+        }
+        Stats.record(ev, (err, data) =&gt; {
+            if (err) {
+                return lien.apiError(err);
+            }
+            lien.apiMsg(&quot;success&quot;);
+        });
+    });
+});
+</code></pre>
+<p>=====================
+GitHub Login
+=====================</p>
+<p>We used <a href="https://github.com/Bloggify/github-login"><code>bloggify-github-login</code></a> to handle the GitHub authentication.</p>
+<p>By providing the GitHub application credentials, this module handles the OAuth2 workflow.</p>
+<pre><code class="language-js">{
+    &quot;githubClient&quot;: &quot;45...7&quot;,
+    &quot;githubSecret&quot;: &quot;1f...2&quot;
+}
+</code></pre>
+<p>=====================
+Email Notifications
+=====================</p>
+<p>To send emails, we use <a href="https://github.com/Bloggify/bloggify-sendgrid"><code>bloggify-sendgrid</code></a>.</p>
+<pre><code class="language-js">{
+    &quot;key&quot;: &quot;SG.SmlHGA...ylY&quot;
+}
+</code></pre>
+<p>The <code>notifications.js</code> file takes care of sending the emails using this module. We send emails when:</p>
+<ol>
+<li>
+<p>Somebody creates a new topic</p>
+<p>Emails are sent to all the users from the forum the author belongs to, except to the author.</p>
+</li>
+<li>
+<p>Somebody posts a comment</p>
+<p>Emails are sent to previous people involved in the conversation.</p>
+</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../Cloud-Api/overview/" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../overview/" class="btn btn-neutral" title="Preparation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>RCODI 2021</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../overview/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../Cloud-Api/overview/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
