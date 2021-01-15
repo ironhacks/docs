@@ -1,0 +1,1112 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ironhacks Platform Documentation Site">
+      
+      
+      
+      
+        <link rel="canonical" href="https://ironhacks.github.io/docs/Cloud-Api/usage/">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
+    
+    
+      
+        <title>Usage - IronHacks Platform</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.15aa0b43.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.75751829.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../styles/custom.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#github-api" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://ironhacks.github.io/docs" title="IronHacks Platform" class="md-header-nav__button md-logo" aria-label="IronHacks Platform">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            IronHacks Platform
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Usage
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/ironhacks/docs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://ironhacks.github.io/docs" title="IronHacks Platform" class="md-nav__button md-logo" aria-label="IronHacks Platform">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    IronHacks Platform
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/ironhacks/docs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="../.." class="md-nav__link">
+      IronHacks Docs Site
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    
+    <label class="md-nav__link" for="nav-2">
+      App Client
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="App Client" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        App Client
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../App-Client/functions/" class="md-nav__link">
+      Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../App-Client/install/" class="md-nav__link">
+      Install
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../App-Client/overview/" class="md-nav__link">
+      Preparation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../App-Client/usage/" class="md-nav__link">
+      Usage
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Cloud Api
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Cloud Api" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Cloud Api
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../requirements/" class="md-nav__link">
+      Requirements
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../setup/" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Usage
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Usage
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creategithubrepo" class="md-nav__link">
+    createGithubRepo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#committogithub" class="md-nav__link">
+    commitToGitHub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-editor" class="md-nav__link">
+    Project Editor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#account-management" class="md-nav__link">
+    Account Management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilities" class="md-nav__link">
+    Utilities
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-ses-forum" class="md-nav__link">
+    Amazon SES &amp; Forum
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
+    <label class="md-nav__link" for="nav-4">
+      Developer Documentation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Developer Documentation" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Developer Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Developer-Documentation/overview/" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Developer-Documentation/references/" class="md-nav__link">
+      References
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+    
+    <label class="md-nav__link" for="nav-5">
+      Platform Documentation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Platform Documentation" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Platform Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Platform-Documentation/admin/" class="md-nav__link">
+      Admin
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Platform-Documentation/hacks/" class="md-nav__link">
+      Hacks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../Platform-Documentation/metrics/" class="md-nav__link">
+      Platform Metrics
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creategithubrepo" class="md-nav__link">
+    createGithubRepo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#committogithub" class="md-nav__link">
+    commitToGitHub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-editor" class="md-nav__link">
+    Project Editor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#account-management" class="md-nav__link">
+    Account Management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilities" class="md-nav__link">
+    Utilities
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-ses-forum" class="md-nav__link">
+    Amazon SES &amp; Forum
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/ironhacks/docs/blob/master/src/Cloud-Api/usage.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h2 id="github-api">GitHub API</h2>
+<ul>
+<li><a href="#committogithub"><strong>commitToGitHub</strong></a></li>
+<li><a href="#creategithubrepo"><strong>createGitHubRepo</strong></a></li>
+</ul>
+<p>The flow here is quite simple, we a user creates a project, create that project in two different places: The user&rsquo;s firebase storage folder and the GitHub organization specified on the initialization section.</p>
+<p>The user will query the Firebase storage when using the platform, so we always store the latest version of the user project there. However, for the judger to work, we ask the user to &ldquo;push&rdquo; the version that is going to be evaluated. This &ldquo;push&rdquo; actually pushes the files to the GitHub repo.</p>
+<p>So the judger can retrieve them from GitHub.</p>
+<p>Keep in mind that this is transparent for the user.</p>
+<p><strong>Github Configuration</strong></p>
+<pre><code class="language-js">const github = require(&quot;octonode&quot;);
+const githubPersonalAccessToken = process.env.GITHUB_ACCESS_TOKEN;
+const client = github.client(githubPersonalAccessToken);
+const ghme = client.me();
+const ghorg = client.org(&quot;UNALIronHacks&quot;);
+
+module.exports = {
+  github: github,
+  client: client,
+  me: ghme,
+  org: ghorg,
+};
+</code></pre>
+<p>Let&rsquo;s start by the GitHub repository creation:</p>
+<h3 id="creategithubrepo">createGithubRepo</h3>
+<p>Parameters:</p>
+<pre><code class="language-javascript">const newRepoConfig = {
+  name: projectName,
+  description: 'UNAL-ironhacks-spring-2019',
+  private: true,
+  auto_init: true,
+}
+</code></pre>
+<pre><code class="language-javascript">exports.createGitHubRepo = functions.https.onCall(async (data, context) =&gt; {
+  try {
+    const result = await ghorg.repoAsync(data);
+    return result;
+  } catch(err) {
+    return {message: 'Error', error: err, status: 500};
+  }  
+})
+</code></pre>
+<p>This function is really simple, is just a call to the Octonode library (check <a href="https://github.com/pksunkara/octonode">their docs</a>) to create a new empty repo.</p>
+<p>Please refer to the <a href="https://github.com/pksunkara/octonode">Octonode docs</a> to understand how <code>ghrepo.contentsAsync</code>, <code>ghrepo.updateContentsAsync</code> and <code>ghrepo.createContentsAsync</code> works.</p>
+<h3 id="committogithub">commitToGitHub</h3>
+<p>Main function that submits the committed files to the GitHub API</p>
+<pre><code class="language-js">const commitToGitHub = functions.https.onCall(async (data, context) =&gt; {
+  const ghrepo = gh.client.repo(&quot;UNALIronHacks/&quot; + data.name);
+
+  const { commitMessage, files } = data;
+  const result = await commitChanges(commitMessage, files, ghrepo);
+  return result;
+});
+</code></pre>
+<h3 id="project-editor">Project Editor</h3>
+<ul>
+<li><strong>previewWebServer</strong></li>
+</ul>
+<h3 id="account-management">Account Management</h3>
+<ul>
+<li><strong>registerUser</strong></li>
+</ul>
+<h3 id="utilities">Utilities</h3>
+<ul>
+<li><strong>getPhaseResults</strong></li>
+<li><strong>getTaskDoc</strong></li>
+<li><strong>saveLikedCompetitors</strong></li>
+<li><strong>saveStat</strong></li>
+</ul>
+<h3 id="amazon-ses-forum">Amazon SES &amp; Forum</h3>
+<ul>
+<li><strong>newThreadEmailNotification</strong></li>
+</ul>
+<pre><code class="language-javascript">admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: functions.config().database.url
+});
+
+</code></pre>
+<p>Besides import the libraries required (we will address them on the fuctions in where they are used, if needed), there are some importants things you should check:</p>
+<pre><code class="language-javascript">const newThreadEmailNotification = require('./amazonSESfunctions');
+</code></pre>
+<p>The email functionality is in it own js file, and we import them here just to export it amogn the bundle. (We will address it at the end)</p>
+<pre><code class="language-javascript">const serviceAccount = require('./service-account.json');
+</code></pre>
+<p>Here we import our Firebase project keys from a local file, remember, you <em><strong>should not</strong></em> upload this file to the repository.</p>
+<p>And just after that, we initialized the Firebase admin library:</p>
+<pre><code class="language-javascript">admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: functions.config().database.url
+});
+</code></pre>
+<p>Notice how we access to the env variables in order to get the database URL.</p>
+<p>Here we catch the personal key from the env variables, then we use it to create the instance of github octonode.</p>
+<pre><code class="language-javascript">const githubPersonalAccessToken = functions.config().githubapi.personalkey;
+</code></pre>
+<p>And then we create the &ldquo;user&rdquo; object and also select the organization on which we will create the repositories of the projects. Remember that this have to be a PRO user and a PRO organization in order to be able to create private repos.</p>
+<p>(Please check the <a href="https://github.com/pksunkara/octonode">Octonode docs</a> if you feel rusty here); in this case the organization is called &ldquo;UNALIronhacks&rdquo;, this was the one we used back then, you should put your own one there.</p>
+<pre><code class="language-javascript">const ghme = client.me();
+const ghorg = client.org('UNALIronHacks');
+</code></pre>
+<h2 id="registration-process">Registration Process</h2>
+<p>The first group of functions is related with the registration process of an user and is composed by two functions:</p>
+<pre><code class="language-javascript">exports.registerUser = functions.https.onCall((data, context) =&gt; {...})
+const getNewParticipantForumId = (hackId, userId) =&gt; {...}
+</code></pre>
+<p>As you can see, only one function is exported, <code>registerUser</code>.</p>
+<p><code>getPartipantForumId</code> is and utility used by the first one.</p>
+<hr />
+<h3 id="registeruserhackid">registerUser(hackID)</h3>
+<p>On <code>./functions/index.js</code></p>
+<p>Parameters:</p>
+<pre><code class="language-json">{ &quot;hackId&quot;: &quot;hackId&quot;}
+</code></pre>
+<p>hackId is the id from a hack documment on the database.</p>
+<pre><code class="language-javascript">exports.registerUser = functions.https.onCall((data, context) =&gt; {
+  return db.collection(&quot;adminHackData&quot;)
+  .doc(data.hackId)
+  .set({
+    registeredUsers: admin.firestore.FieldValue.arrayUnion(context.auth.uid)
+  }, {merge: true})
+  .then((result) =&gt; {
+    return getNewParticipantForumId(data.hackId, context.auth.uid)
+    .then((forum) =&gt; {
+      return db.collection('users')
+      .doc(context.auth.uid)
+      .set({
+        hacks: admin.firestore.FieldValue.arrayUnion(data.hackId),
+        forums: forum,
+      }, {merge: true})
+      .then((result) =&gt; {
+        return {message: 'success', status: 200};
+      })
+      .catch(error =&gt; {
+        return {message: error, status: 500};
+      })
+    })
+    .catch(error =&gt; {
+      return {message: error, status: 500};
+    })
+  })
+  .catch(error =&gt; {
+      return {message: error, status: 500};
+  })
+});
+</code></pre>
+<p>This function will retrieve the hack data corresponding with the hackId sended as parameter from the adminHackData colletion, it will add the userID to the registeredUsers array and update the hack document. Then, it will ask for the forumID the user was register on and will update the user&rsquo;s documment, adding the hackID and the forumID to it.</p>
+<hr />
+<h3 id="getnewparticipantforumidhackid-userid">getNewParticipantForumId(hackId, userId)</h3>
+<p>On <code>./functions/index.js</code></p>
+<p>Parameters:</p>
+<pre><code>hackID : String
+userID : String
+</code></pre>
+<pre><code class="language-javascript">const getNewParticipantForumId = (hackId, userId) =&gt; {
+  return db.collection(&quot;forums&quot;)
+  .where('hack', '==', hackId)
+  .get()
+  .then((querySnapshot) =&gt; {
+    let selectedForum;
+    let forumParticipants = -1;
+    querySnapshot.forEach((doc) =&gt; {
+      const legth = Object.keys(doc.data().participants)
+      if(forumParticipants === -1){
+        selectedForum = doc;
+        forumParticipants = Object.keys(doc.data().participants);
+      }else if(Object.keys(doc.data().participants).length &lt; forumParticipants.length){
+        selectedForum = doc;
+        forumParticipants = Object.keys(doc.data().participants);
+      }
+    });
+    return db.collection('forums').doc(selectedForum.id)
+    .set({participants: {[userId]: `Hacker ${forumParticipants.length + 1}`}}, {merge: true})
+    .then(() =&gt; {
+      const forum = {};
+      forum[hackId] = {id: selectedForum.id};
+      return forum;
+    })
+    .catch(error =&gt; {
+      return {message: error, status: 500};
+    })
+  }).catch(error =&gt; {
+      return {message: error, status: 500};
+  })
+}
+</code></pre>
+<p>This function will search into the formus of a given hack (hackID) the one which have the less participants registered on, then it will register the new participant (userID) on it and will return the forum id.</p>
+<h2 id="project-editor_1">Project Editor</h2>
+<p>Now we are going to describe the function related with the project editor:</p>
+<pre><code class="language-javascript">exports.previewWebServer = functions.https.onRequest((req, res) =&gt; {...})
+</code></pre>
+<p>Although you could say that the Github API are also related, for the sake of consistency, we are going to separate the thirdh party ones from this group.</p>
+<p>One of the biggest needs to the platform is to be able to preview the mockup that is being developed by a participant. Basically, to have a web server. However, What the platform tryes to do here is to mimik the behaviour of a web server, using only cloud functions. Even if a first glance it looks like an over engineered solution, the idea here is to have the less amount of compoenents posible and create a platform easy to use.</p>
+<h3 id="preview-aka-web-server">Preview (AKA Web Server)</h3>
+<p>The preview system relies on to key components, the <code>previewWebServer</code> function and the rewrite is defined on the config file:</p>
+<p>On <code>./firebase.json</code></p>
+<pre><code class="language-json">...
+  &quot;rewrites&quot;: [
+    {
+      &quot;source&quot;: &quot;/preview/**&quot;,
+      &quot;function&quot;: &quot;previewWebServer&quot;
+    },
+    {
+      &quot;source&quot;: &quot;**&quot;,
+      &quot;destination&quot;: &quot;/index.html&quot;
+    }
+  ]
+},
+...
+</code></pre>
+<p>First, let&rsquo;s look the config file: We are redirecting everything that go to the preview url to call the previewWebServer function, this allow the function to be triggered whenever a file for a given is requested. Let&rsquo;s check the function itself:</p>
+<pre><code class="language-javascript">exports.previewWebServer = functions.https.onRequest((req, res) =&gt; {
+  const filePathStorage = req.originalUrl.replace('/preview', '');
+  const fileName = path.basename(filePathStorage);
+
+  const tempPath = path.join(os.tmpdir(), `${fileName}`);
+  return storage
+  .bucket(functions.config().database.bucket)
+  .file(filePathStorage)
+  .download({
+    destination: tempPath,
+  }).then(() =&gt; {
+    res.sendFile(tempPath, (err) =&gt; {
+      if (err) {
+        return res.end();
+      }else{
+        return res.end();
+      }
+    });
+  }).catch((error) =&gt; {
+    console.error(error.message);
+    if(error.message === 'Not Found') {
+      console.error('File not found', filePathStorage);
+      return res.status(404).send('File not found on storage');
+    }else{
+      return res.status(500).send(error.message);
+    }
+  })
+});
+</code></pre>
+<p>We call this function directly from the browser (since the idea is to replicate a web server), and the structure of the URL is the following:</p>
+<pre><code class="language-javascript">const projectURL = `${Constants.cloudFunctionsProdEndPoint}/previewWebServer/${this.state.user.uid}/${this.state.projectName}/index.html`;
+</code></pre>
+<p>The Constants.cloudFunctionsProdEnd is the endpoint of your firebase cloud functions project.</p>
+<p>This function will retrieve the resource requested on the path, in this case, we allways start by de index.html. Once the index.html is loaded by the browser, it will call again the same function in order to load additional assets, for example, a javascript file.</p>
+<p>Since we rewrite de function, everytime the browser request other file, like <code>js/main.js</code> it will be redirected to the previewWebServer function, and it will retrieve the file.</p>
+<p>Keep in mind that this function retrieve the files from the Firebase storage service.</p>
+<h1 id="experiment-related-functions">Experiment related functions</h1>
+<p>Since the main idea of the platform is to create specific conditions related with the experiment that is being done, the platform exposes 4 particular functions that will help you to do that:</p>
+<pre><code class="language-javascript">exports.getTaskDoc = functions.https.onCall((data, context) =&gt; {...}
+exports.saveStat = functions.https.onCall((data, context) =&gt; {...}
+exports.getPhaseResults = functions.https.onCall((data, context) =&gt; {...}
+exports.saveLikedCompetitors = functions.https.onCall((data, context) =&gt; {...}
+</code></pre>
+<p>Let&rsquo;s start by the most basic:</p>
+<h3 id="gettaskdoc">getTaskDoc</h3>
+<p>This function return the Task document, this is the documment that contains the challenge or problem the participants of a hack will face. Keep in mind that the document will only be served if the publish date already pass. Also keep in mind that the content of the file is encode in base64.</p>
+<pre><code class="language-javascript">exports.getTaskDoc = functions.https.onCall((data, context) =&gt; {
+  const currentDate = new Date();
+  return db.collection(&quot;adminHackData&quot;)
+  .doc(data.hackId)
+  .get()
+  .then((doc) =&gt; {
+    const seconds = doc.data().task.releaseDate._seconds
+    const nanoseconds = doc.data().task.releaseDate._nanoseconds
+    const releaseDate = new admin.firestore.Timestamp(seconds, nanoseconds).toDate();
+    if(releaseDate &lt; currentDate){
+      return {task: doc.data().task.doc};
+    }else {
+      return {error: 'To early', status: 500};
+    }
+  })
+  .catch(error =&gt; {
+    console.error(error);
+    return {message: error, status: 500};
+  })
+});
+</code></pre>
+<h3 id="savestat">saveStat</h3>
+<p>The platform allows you to collect stats, you can pretty much collect every single interaction and saving it on the database by calling this function:</p>
+<pre><code class="language-javascript">exports.saveStat = functions.https.onCall((data, context) =&gt; {
+  const currentDate = new Date();
+  data.date = currentDate;
+  return db.collection(&quot;stats&quot;)
+  .add(data)
+  .then(function(docRef) {
+    return {&quot;result&quot;: &quot;job done&quot;, &quot;status&quot;: 204};
+  })
+  .catch(function(error) {
+    console.error(&quot;Error adding document: &quot;, error);
+    return {&quot;error&quot;: error, &quot;status&quot;: 500};
+  });
+});
+</code></pre>
+<p>Basically, you call it from the client, and sent an object as parameter, this object should keep the following structure:</p>
+<pre><code class="language-javascript">stat = {
+  event: 'the name of the stat',
+  metadata: {...},
+  userId: 'a user id',
+}
+</code></pre>
+<p>On the metadata object you can store pretty much anything, is just complementary information to the stat itself.</p>
+<h1 id="amazon-ses">Amazon SES</h1>
+<p>The integration with Amazon SES is pretty simple, we set a trigger on the comments collection that is activated when a new documment is done on that collection:</p>
+<pre><code class="language-javascript">exports.newThreadEmailNotification = functions.firestore
+.document('comments/{commentId}')
+.onCreate(newThreadEmailNotification);
+</code></pre>
+<p>The function called on the trigger is <code>newThreadEmailNotification</code></p>
+<p><em>On: ./funtions/amazonSESFunctions</em></p>
+<pre><code class="language-javascript">module.exports = newThreadEmailNotification = (doc, context) =&gt; {
+  const commentData = doc.data();
+  let subject = 'The Ironhacks Platform - There is a new comment on a topic you commented! check it out!'
+  commentData.id = doc.id;
+
+  if (commentData.forumId) {
+    subject = 'The Ironhacks Platform - There is a new topic on the forum! check it out!'
+  }
+
+  const params = {
+    Destination: {
+      ToAddresses: [
+        'example@example.com',
+      ],
+    },
+    Message: {
+      Body: {
+        Html: {
+          Charset: 'UTF-8',
+          Data: forumActivityTemplate
+          .replace('[topic-title]', 'a title')
+          .replace('[comment-body]', commentData.body)
+          .replace('[thread-id]', commentData.threadID),
+        },
+        Text: {
+          Charset: 'UTF-8',
+          Data: `
+           The Ironhacks &lt;Platform&gt;&lt;/Platform&gt;
+
+           Hey! there is a new [item-type] posted on the forum! check it out!
+
+           ${commentData.title}
+           ${commentData.body}
+
+           https://ironhacks.com/forum/thread/${commentData.id}
+
+
+           This is an automatic email, do not reply.
+           `,
+        },
+      },
+      Subject: {
+        Charset: 'UTF-8',
+        Data: subject,
+      },
+    },
+    Source: 'RCODI &lt;researchopendigitalinnovation@gmail.com&gt;',
+    ReplyToAddresses: [
+      'researchopendigitalinnovation@gmail.com',
+    ],
+  };
+
+  const sendPromise = new AWS.SES({
+    apiVersion: '2010-12-01',
+  }).sendEmail(params).promise();
+
+  return sendPromise.then((data) =&gt; {
+    console.log(`Forum activity email sent ${data.MessageId}`);
+    return true;
+  }).catch((error) =&gt; {
+    console.error('Forum activity email not sent', error, error.stack);
+  });
+};
+</code></pre>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../setup/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Setup
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../Developer-Documentation/overview/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Overview
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            RCODI 2021
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
