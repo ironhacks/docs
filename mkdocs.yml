@@ -19,7 +19,7 @@ theme:
 #     - About: about.md
 # repo_url: git@github.com:ironhacks/docs.git
 repo_url: https://github.com/ironhacks/docs
-repo_name: docs
+repo_name: Github
 remote_branch: gh-pages
 # google_analytics:
 edit_uri: blob/master/src/
