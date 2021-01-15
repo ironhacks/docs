@@ -67,17 +67,3 @@ Currently Using:
 __List of Markdown Extensions__
 
 [github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions](https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions)
-
-### Markdown Cheatsheet
-
-Checklist:
-
-- [ ] foo
-- [x] bar
-- [ ] baz
-
-```md
-- [ ] foo
-- [x] bar
-- [ ] baz
-```

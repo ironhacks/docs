@@ -37,4 +37,3 @@ markdown_extensions:
     - meta
     - tables
     - fenced_code
-    - markdown_checklist.extension
