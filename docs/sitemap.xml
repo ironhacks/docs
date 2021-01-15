@@ -1,48 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://charrismatic.github.io/ironhacks-docs/</loc>
-     <lastmod>2020-01-23</lastmod>
+     <lastmod>2021-01-15</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://charrismatic.github.io/ironhacks-docs/App-Client/functions/</loc>
-     <lastmod>2020-01-23</lastmod>
+     <lastmod>2021-01-15</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://charrismatic.github.io/ironhacks-docs/App-Client/install/</loc>
-     <lastmod>2020-01-23</lastmod>
+     <lastmod>2021-01-15</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
+     <loc>https://charrismatic.github.io/ironhacks-docs/App-Client/overview/</loc>
+     <lastmod>2021-01-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://charrismatic.github.io/ironhacks-docs/App-Client/usage/</loc>
-     <lastmod>2020-01-23</lastmod>
+     <lastmod>2021-01-15</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://charrismatic.github.io/ironhacks-docs/Cloud-Api/overview/</loc>
-     <lastmod>2020-01-23</lastmod>
+     <lastmod>2021-01-15</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://charrismatic.github.io/ironhacks-docs/Cloud-Api/requirements/</loc>
-     <lastmod>2020-01-23</lastmod>
+     <lastmod>2021-01-15</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://charrismatic.github.io/ironhacks-docs/Cloud-Api/setup/</loc>
-     <lastmod>2020-01-23</lastmod>
+     <lastmod>2021-01-15</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://charrismatic.github.io/ironhacks-docs/Cloud-Api/usage/</loc>
-     <lastmod>2020-01-23</lastmod>
+     <lastmod>2021-01-15</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://charrismatic.github.io/ironhacks-docs/Developer-Documentation/overview/</loc>
-     <lastmod>2020-01-23</lastmod>
+     <lastmod>2021-01-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://charrismatic.github.io/ironhacks-docs/Developer-Documentation/references/</loc>
+     <lastmod>2021-01-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://charrismatic.github.io/ironhacks-docs/Platform-Documentation/admin/</loc>
+     <lastmod>2021-01-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://charrismatic.github.io/ironhacks-docs/Platform-Documentation/hacks/</loc>
+     <lastmod>2021-01-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://charrismatic.github.io/ironhacks-docs/Platform-Documentation/metrics/</loc>
+     <lastmod>2021-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

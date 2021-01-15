@@ -7,13 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
+  <link rel="canonical" href="https://charrismatic.github.io/ironhacks-docs/Cloud-Api/usage/">
   <link rel="shortcut icon" href="../../img/favicon.ico">
   <title>Usage - IronHacks Platform</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../styles/custom.css" rel="stylesheet" />
   
   <script>
     // Current page data
@@ -24,7 +26,7 @@
   
   <script src="../../js/jquery-2.1.1.min.js" defer></script>
   <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
@@ -35,6 +37,7 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
         <a href="../.." class="icon icon-home"> IronHacks Platform</a>
         <div role="search">
@@ -45,126 +48,64 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../..">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">App Client</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../App-Client/functions/">Functions</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../App-Client/install/">Install</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../App-Client/usage/">Usage</a>
-                </li>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">App Client</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../App-Client/functions/">Functions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../App-Client/install/">Install</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../App-Client/overview/">Preparation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../App-Client/usage/">Usage</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Cloud Api</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../overview/">Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../requirements/">Requirements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../setup/">Setup</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Usage</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#creategithubrepo">createGithubRepo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#committogithub">commitToGitHub</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#project-editor">Project Editor</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#account-management">Account Management</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#utilities">Utilities</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#amazon-ses-forum">Amazon SES &amp; Forum</a>
+    </li>
     </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Cloud Api</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../overview/">Overview</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../requirements/">Requirements</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../setup/">Setup</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">Usage</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#github-api">GitHub API</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#creategithubrepo">createGithubRepo</a></li>
-        
-            <li><a class="toctree-l4" href="#committogithub">commitToGitHub</a></li>
-        
-            <li><a class="toctree-l4" href="#project-editor">Project Editor</a></li>
-        
-            <li><a class="toctree-l4" href="#account-management">Account Management</a></li>
-        
-            <li><a class="toctree-l4" href="#utilities">Utilities</a></li>
-        
-            <li><a class="toctree-l4" href="#amazon-ses-forum">Amazon SES &amp; Forum</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l3"><a href="#registration-process">Registration Process</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#registeruserhackid">registerUser(hackID)</a></li>
-        
-            <li><a class="toctree-l4" href="#getnewparticipantforumidhackid-userid">getNewParticipantForumId(hackId, userId)</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l3"><a href="#project-editor_1">Project Editor</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#preview-aka-web-server">Preview (AKA Web Server)</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l3"><a href="#experiment-related-functions">Experiment related functions</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#gettaskdoc">getTaskDoc</a></li>
-        
-            <li><a class="toctree-l4" href="#savestat">saveStat</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l3"><a href="#amazon-ses">Amazon SES</a></li>
-    
-
-    </ul>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Developer Documentation</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../Developer-Documentation/overview/">Overview</a>
-                </li>
-    </ul>
-	    </li>
-          
-        </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developer Documentation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Documentation/overview/">Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Documentation/references/">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Platform Documentation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Platform-Documentation/admin/">Admin</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Platform-Documentation/hacks/">Hacks</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Platform-Documentation/metrics/">Platform Metrics</a>
+                    </li>
+                </ul>
       </div>
-      &nbsp;
+    </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -191,11 +132,12 @@
     <li>Usage</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/charrismatic/ironhacks-docs/edit/master/docs/Cloud-Api/usage.md"
+        <a href="https://github.com/charrismatic/ironhacks-docs/blob/master/src/Cloud-Api/usage.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
   </ul>
+  
   <hr/>
 </div>
           <div role="main">
@@ -211,7 +153,7 @@
 <p>So the judger can retrieve them from GitHub.</p>
 <p>Keep in mind that this is transparent for the user.</p>
 <p><strong>Github Configuration</strong></p>
-<pre><code class="js">const github = require(&quot;octonode&quot;);
+<pre><code class="language-js">const github = require(&quot;octonode&quot;);
 const githubPersonalAccessToken = process.env.GITHUB_ACCESS_TOKEN;
 const client = github.client(githubPersonalAccessToken);
 const ghme = client.me();
@@ -224,19 +166,17 @@ module.exports = {
   org: ghorg,
 };
 </code></pre>
-
 <p>Let&rsquo;s start by the GitHub repository creation:</p>
 <h3 id="creategithubrepo">createGithubRepo</h3>
 <p>Parameters:</p>
-<pre><code class="javascript">const newRepoConfig = {
+<pre><code class="language-javascript">const newRepoConfig = {
   name: projectName,
   description: 'UNAL-ironhacks-spring-2019',
   private: true,
   auto_init: true,
 }
 </code></pre>
-
-<pre><code class="javascript">exports.createGitHubRepo = functions.https.onCall(async (data, context) =&gt; {
+<pre><code class="language-javascript">exports.createGitHubRepo = functions.https.onCall(async (data, context) =&gt; {
   try {
     const result = await ghorg.repoAsync(data);
     return result;
@@ -245,12 +185,11 @@ module.exports = {
   }  
 })
 </code></pre>
-
 <p>This function is really simple, is just a call to the Octonode library (check <a href="https://github.com/pksunkara/octonode">their docs</a>) to create a new empty repo.</p>
 <p>Please refer to the <a href="https://github.com/pksunkara/octonode">Octonode docs</a> to understand how <code>ghrepo.contentsAsync</code>, <code>ghrepo.updateContentsAsync</code> and <code>ghrepo.createContentsAsync</code> works.</p>
 <h3 id="committogithub">commitToGitHub</h3>
 <p>Main function that submits the committed files to the GitHub API</p>
-<pre><code class="js">const commitToGitHub = functions.https.onCall(async (data, context) =&gt; {
+<pre><code class="language-js">const commitToGitHub = functions.https.onCall(async (data, context) =&gt; {
   const ghrepo = gh.client.repo(&quot;UNALIronHacks/&quot; + data.name);
 
   const { commitMessage, files } = data;
@@ -258,7 +197,6 @@ module.exports = {
   return result;
 });
 </code></pre>
-
 <h3 id="project-editor">Project Editor</h3>
 <ul>
 <li><strong>previewWebServer</strong></li>
@@ -278,57 +216,49 @@ module.exports = {
 <ul>
 <li><strong>newThreadEmailNotification</strong></li>
 </ul>
-<pre><code class="javascript">admin.initializeApp({
+<pre><code class="language-javascript">admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: functions.config().database.url
 });
 
 </code></pre>
-
 <p>Besides import the libraries required (we will address them on the fuctions in where they are used, if needed), there are some importants things you should check:</p>
-<pre><code class="javascript">const newThreadEmailNotification = require('./amazonSESfunctions');
+<pre><code class="language-javascript">const newThreadEmailNotification = require('./amazonSESfunctions');
 </code></pre>
-
 <p>The email functionality is in it own js file, and we import them here just to export it amogn the bundle. (We will address it at the end)</p>
-<pre><code class="javascript">const serviceAccount = require('./service-account.json');
+<pre><code class="language-javascript">const serviceAccount = require('./service-account.json');
 </code></pre>
-
 <p>Here we import our Firebase project keys from a local file, remember, you <em><strong>should not</strong></em> upload this file to the repository.</p>
 <p>And just after that, we initialized the Firebase admin library:</p>
-<pre><code class="javascript">admin.initializeApp({
+<pre><code class="language-javascript">admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: functions.config().database.url
 });
 </code></pre>
-
 <p>Notice how we access to the env variables in order to get the database URL.</p>
 <p>Here we catch the personal key from the env variables, then we use it to create the instance of github octonode.</p>
-<pre><code class="javascript">const githubPersonalAccessToken = functions.config().githubapi.personalkey;
+<pre><code class="language-javascript">const githubPersonalAccessToken = functions.config().githubapi.personalkey;
 </code></pre>
-
 <p>And then we create the &ldquo;user&rdquo; object and also select the organization on which we will create the repositories of the projects. Remember that this have to be a PRO user and a PRO organization in order to be able to create private repos.</p>
 <p>(Please check the <a href="https://github.com/pksunkara/octonode">Octonode docs</a> if you feel rusty here); in this case the organization is called &ldquo;UNALIronhacks&rdquo;, this was the one we used back then, you should put your own one there.</p>
-<pre><code class="javascript">const ghme = client.me();
+<pre><code class="language-javascript">const ghme = client.me();
 const ghorg = client.org('UNALIronHacks');
 </code></pre>
-
 <h2 id="registration-process">Registration Process</h2>
 <p>The first group of functions is related with the registration process of an user and is composed by two functions:</p>
-<pre><code class="javascript">exports.registerUser = functions.https.onCall((data, context) =&gt; {...})
+<pre><code class="language-javascript">exports.registerUser = functions.https.onCall((data, context) =&gt; {...})
 const getNewParticipantForumId = (hackId, userId) =&gt; {...}
 </code></pre>
-
 <p>As you can see, only one function is exported, <code>registerUser</code>.</p>
 <p><code>getPartipantForumId</code> is and utility used by the first one.</p>
 <hr />
 <h3 id="registeruserhackid">registerUser(hackID)</h3>
 <p>On <code>./functions/index.js</code></p>
 <p>Parameters:</p>
-<pre><code class="json">{ &quot;hackId&quot;: &quot;hackId&quot;}
+<pre><code class="language-json">{ &quot;hackId&quot;: &quot;hackId&quot;}
 </code></pre>
-
 <p>hackId is the id from a hack documment on the database.</p>
-<pre><code class="javascript">exports.registerUser = functions.https.onCall((data, context) =&gt; {
+<pre><code class="language-javascript">exports.registerUser = functions.https.onCall((data, context) =&gt; {
   return db.collection(&quot;adminHackData&quot;)
   .doc(data.hackId)
   .set({
@@ -359,7 +289,6 @@ const getNewParticipantForumId = (hackId, userId) =&gt; {...}
   })
 });
 </code></pre>
-
 <p>This function will retrieve the hack data corresponding with the hackId sended as parameter from the adminHackData colletion, it will add the userID to the registeredUsers array and update the hack document. Then, it will ask for the forumID the user was register on and will update the user&rsquo;s documment, adding the hackID and the forumID to it.</p>
 <hr />
 <h3 id="getnewparticipantforumidhackid-userid">getNewParticipantForumId(hackId, userId)</h3>
@@ -368,8 +297,7 @@ const getNewParticipantForumId = (hackId, userId) =&gt; {...}
 <pre><code>hackID : String
 userID : String
 </code></pre>
-
-<pre><code class="javascript">const getNewParticipantForumId = (hackId, userId) =&gt; {
+<pre><code class="language-javascript">const getNewParticipantForumId = (hackId, userId) =&gt; {
   return db.collection(&quot;forums&quot;)
   .where('hack', '==', hackId)
   .get()
@@ -401,19 +329,17 @@ userID : String
   })
 }
 </code></pre>
-
 <p>This function will search into the formus of a given hack (hackID) the one which have the less participants registered on, then it will register the new participant (userID) on it and will return the forum id.</p>
 <h2 id="project-editor_1">Project Editor</h2>
 <p>Now we are going to describe the function related with the project editor:</p>
-<pre><code class="javascript">exports.previewWebServer = functions.https.onRequest((req, res) =&gt; {...})
+<pre><code class="language-javascript">exports.previewWebServer = functions.https.onRequest((req, res) =&gt; {...})
 </code></pre>
-
 <p>Although you could say that the Github API are also related, for the sake of consistency, we are going to separate the thirdh party ones from this group.</p>
 <p>One of the biggest needs to the platform is to be able to preview the mockup that is being developed by a participant. Basically, to have a web server. However, What the platform tryes to do here is to mimik the behaviour of a web server, using only cloud functions. Even if a first glance it looks like an over engineered solution, the idea here is to have the less amount of compoenents posible and create a platform easy to use.</p>
 <h3 id="preview-aka-web-server">Preview (AKA Web Server)</h3>
 <p>The preview system relies on to key components, the <code>previewWebServer</code> function and the rewrite is defined on the config file:</p>
 <p>On <code>./firebase.json</code></p>
-<pre><code class="json">...
+<pre><code class="language-json">...
   &quot;rewrites&quot;: [
     {
       &quot;source&quot;: &quot;/preview/**&quot;,
@@ -427,9 +353,8 @@ userID : String
 },
 ...
 </code></pre>
-
 <p>First, let&rsquo;s look the config file: We are redirecting everything that go to the preview url to call the previewWebServer function, this allow the function to be triggered whenever a file for a given is requested. Let&rsquo;s check the function itself:</p>
-<pre><code class="javascript">exports.previewWebServer = functions.https.onRequest((req, res) =&gt; {
+<pre><code class="language-javascript">exports.previewWebServer = functions.https.onRequest((req, res) =&gt; {
   const filePathStorage = req.originalUrl.replace('/preview', '');
   const fileName = path.basename(filePathStorage);
 
@@ -458,27 +383,24 @@ userID : String
   })
 });
 </code></pre>
-
 <p>We call this function directly from the browser (since the idea is to replicate a web server), and the structure of the URL is the following:</p>
-<pre><code class="javascript">const projectURL = `${Constants.cloudFunctionsProdEndPoint}/previewWebServer/${this.state.user.uid}/${this.state.projectName}/index.html`;
+<pre><code class="language-javascript">const projectURL = `${Constants.cloudFunctionsProdEndPoint}/previewWebServer/${this.state.user.uid}/${this.state.projectName}/index.html`;
 </code></pre>
-
 <p>The Constants.cloudFunctionsProdEnd is the endpoint of your firebase cloud functions project.</p>
 <p>This function will retrieve the resource requested on the path, in this case, we allways start by de index.html. Once the index.html is loaded by the browser, it will call again the same function in order to load additional assets, for example, a javascript file.</p>
 <p>Since we rewrite de function, everytime the browser request other file, like <code>js/main.js</code> it will be redirected to the previewWebServer function, and it will retrieve the file.</p>
 <p>Keep in mind that this function retrieve the files from the Firebase storage service.</p>
 <h1 id="experiment-related-functions">Experiment related functions</h1>
 <p>Since the main idea of the platform is to create specific conditions related with the experiment that is being done, the platform exposes 4 particular functions that will help you to do that:</p>
-<pre><code class="javascript">exports.getTaskDoc = functions.https.onCall((data, context) =&gt; {...}
+<pre><code class="language-javascript">exports.getTaskDoc = functions.https.onCall((data, context) =&gt; {...}
 exports.saveStat = functions.https.onCall((data, context) =&gt; {...}
 exports.getPhaseResults = functions.https.onCall((data, context) =&gt; {...}
 exports.saveLikedCompetitors = functions.https.onCall((data, context) =&gt; {...}
 </code></pre>
-
 <p>Let&rsquo;s start by the most basic:</p>
 <h3 id="gettaskdoc">getTaskDoc</h3>
 <p>This function return the Task document, this is the documment that contains the challenge or problem the participants of a hack will face. Keep in mind that the document will only be served if the publish date already pass. Also keep in mind that the content of the file is encode in base64.</p>
-<pre><code class="javascript">exports.getTaskDoc = functions.https.onCall((data, context) =&gt; {
+<pre><code class="language-javascript">exports.getTaskDoc = functions.https.onCall((data, context) =&gt; {
   const currentDate = new Date();
   return db.collection(&quot;adminHackData&quot;)
   .doc(data.hackId)
@@ -499,10 +421,9 @@ exports.saveLikedCompetitors = functions.https.onCall((data, context) =&gt; {...
   })
 });
 </code></pre>
-
 <h3 id="savestat">saveStat</h3>
 <p>The platform allows you to collect stats, you can pretty much collect every single interaction and saving it on the database by calling this function:</p>
-<pre><code class="javascript">exports.saveStat = functions.https.onCall((data, context) =&gt; {
+<pre><code class="language-javascript">exports.saveStat = functions.https.onCall((data, context) =&gt; {
   const currentDate = new Date();
   data.date = currentDate;
   return db.collection(&quot;stats&quot;)
@@ -516,26 +437,23 @@ exports.saveLikedCompetitors = functions.https.onCall((data, context) =&gt; {...
   });
 });
 </code></pre>
-
 <p>Basically, you call it from the client, and sent an object as parameter, this object should keep the following structure:</p>
-<pre><code class="javascript">stat = {
+<pre><code class="language-javascript">stat = {
   event: 'the name of the stat',
   metadata: {...},
   userId: 'a user id',
 }
 </code></pre>
-
 <p>On the metadata object you can store pretty much anything, is just complementary information to the stat itself.</p>
 <h1 id="amazon-ses">Amazon SES</h1>
 <p>The integration with Amazon SES is pretty simple, we set a trigger on the comments collection that is activated when a new documment is done on that collection:</p>
-<pre><code class="javascript">exports.newThreadEmailNotification = functions.firestore
+<pre><code class="language-javascript">exports.newThreadEmailNotification = functions.firestore
 .document('comments/{commentId}')
 .onCreate(newThreadEmailNotification);
 </code></pre>
-
 <p>The function called on the trigger is <code>newThreadEmailNotification</code></p>
 <p><em>On: ./funtions/amazonSESFunctions</em></p>
-<pre><code class="javascript">module.exports = newThreadEmailNotification = (doc, context) =&gt; {
+<pre><code class="language-javascript">module.exports = newThreadEmailNotification = (doc, context) =&gt; {
   const commentData = doc.data();
   let subject = 'The Ironhacks Platform - There is a new comment on a topic you commented! check it out!'
   commentData.id = doc.id;
@@ -623,7 +541,7 @@ exports.saveLikedCompetitors = functions.https.onCall((data, context) =&gt; {...
     
   </div>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
         </div>
@@ -633,7 +551,7 @@ exports.saveLikedCompetitors = functions.https.onCall((data, context) =&gt; {...
 
   </div>
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
           <a href="https://github.com/charrismatic/ironhacks-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
@@ -649,6 +567,11 @@ exports.saveLikedCompetitors = functions.https.onCall((data, context) =&gt; {...
     <script>var base_url = '../..';</script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
 
 </body>
 </html>

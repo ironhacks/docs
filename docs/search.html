@@ -7,17 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
+  
   <link rel="shortcut icon" href="./img/favicon.ico">
   <title>IronHacks Platform</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="./css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link rel="stylesheet" href="./css/theme.css" />
+  <link rel="stylesheet" href="./css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="./styles/custom.css" rel="stylesheet" />
   
   <script src="./js/jquery-2.1.1.min.js" defer></script>
   <script src="./js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
@@ -28,6 +30,7 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
         <a href="./." class="icon icon-home"> IronHacks Platform</a>
         <div role="search">
@@ -38,70 +41,50 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="./.">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">App Client</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="./App-Client/functions/">Functions</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="./App-Client/install/">Install</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="./App-Client/usage/">Usage</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Cloud Api</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="./Cloud-Api/overview/">Overview</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="./Cloud-Api/requirements/">Requirements</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="./Cloud-Api/setup/">Setup</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="./Cloud-Api/usage/">Usage</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Developer Documentation</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="./Developer-Documentation/overview/">Overview</a>
-                </li>
-    </ul>
-	    </li>
-          
-        </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="./.">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">App Client</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="./App-Client/functions/">Functions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="./App-Client/install/">Install</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="./App-Client/overview/">Preparation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="./App-Client/usage/">Usage</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Cloud Api</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="./Cloud-Api/overview/">Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="./Cloud-Api/requirements/">Requirements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="./Cloud-Api/setup/">Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="./Cloud-Api/usage/">Usage</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developer Documentation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="./Developer-Documentation/overview/">Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="./Developer-Documentation/references/">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Platform Documentation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="./Platform-Documentation/admin/">Admin</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="./Platform-Documentation/hacks/">Hacks</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="./Platform-Documentation/metrics/">Platform Metrics</a>
+                    </li>
+                </ul>
       </div>
-      &nbsp;
+    </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -124,6 +107,7 @@
       
     </li>
   </ul>
+  
   <hr/>
 </div>
           <div role="main">
@@ -156,7 +140,7 @@
     
   </div>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
         </div>
@@ -166,7 +150,7 @@
 
   </div>
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
           <a href="https://github.com/charrismatic/ironhacks-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
@@ -178,6 +162,11 @@
     <script>var base_url = '.';</script>
     <script src="./js/theme.js" defer></script>
       <script src="./search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
 
 </body>
 </html>
