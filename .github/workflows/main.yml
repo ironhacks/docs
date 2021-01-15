@@ -10,8 +10,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Build docs
-        uses: athackst/mkdocs-simple-plugin
+
+      - name: MkDocs Simple action
+        uses: athackst/mkdocs-simple-plugin@v0.3.1
         with:
           publish_branch: gh-pages
           repo_url: https://github.com/${{ github.repository }}
