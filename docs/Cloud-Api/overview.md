@@ -9,7 +9,7 @@ For documentation about the client, go to [The IronHacks Platform repository.](h
 
 ---
 
-The need for a backend on the platform obey to three mayor components: the admin side, the previsualization of a project on the editor and the GitHub integration. All of these requirements are solve using one or more cloud function, saving us the cost of server maintenance.
+The need for a backend on the platform obey to three major components: the admin side, the previsualization of a project on the editor and the GitHub integration. All of these requirements are solve using one or more cloud function, saving us the cost of server maintenance.
 
 
 ## Repository
