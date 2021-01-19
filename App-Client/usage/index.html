@@ -162,7 +162,7 @@ much faster (1-3 seconds).</p>
 <p><strong>Note:</strong> When using a free dyno, it&rsquo;s working fine, but with some limitations:</p>
 <ul>
 <li>it&rsquo;s slower</li>
-<li>it&rsquo;s going to sleep if it&rsquo;s innactive for a certain period of time.</li>
+<li>it&rsquo;s going to sleep if it&rsquo;s inactive for a certain period of time.</li>
 <li>it has bandwidth limits, but pretty liberal</li>
 </ul>
 <p>The app configuration is stored in the <code>bloggify.js</code> file.</p>
@@ -345,8 +345,8 @@ Quizzes
 &lt;% include(&quot;../views/container/end&quot;) %&gt;
 &lt;% include(&quot;../views/footer&quot;) %&gt;
 </code></pre>
-<p>The data associated with this view is storred in the controller (<code>app/controllers/quizzes.js</code>)–see below. The user can click the generated link which contains information about the user (the email address and the user id)–which are storred in the Qualtrics quiz responses as embedded data, and also the redirect url.
-When the user finishes the quiz, they are redirected back the application, on the <code>/quizzes</code> page and the application marks the quiz complete internally. Even the quiz was completed, the user can take it again.</p>
+<p>The data associated with this view is stored in the controller (<code>app/controllers/quizzes.js</code>)–see below. The user can click the generated link which contains information about the user (the email address and the user id)–which are stored in the Qualtrics quiz responses as embedded data, and also the redirect url.
+When the user finishes the quiz, they are redirected back the application, on the <code>/quizzes</code> page and the application marks the quiz complete internally. Even if the quiz was completed, the user can take it again.</p>
 <pre><code class="language-js">const Bloggify = require(&quot;bloggify&quot;)
     , Session = require(&quot;./Session&quot;)
     , User = require(&quot;./User&quot;)
@@ -409,7 +409,7 @@ module.exports = (lien, cb) =&gt; {
 Search
 ========</p>
 <p>On the search page (<code>/search</code>) we can search for content which appears either in the post data or in the comments.</p>
-<p>The view associated with this page is storred in the <code>app/routes/search.ajs</code> and it looks like this:</p>
+<p>The view associated with this page is stored in the <code>app/routes/search.ajs</code> and it looks like this:</p>
 <pre><code class="language-erb">&lt;% include(&quot;../views/header&quot;, { title: &quot;Search&quot; }) %&gt;
 &lt;% include(&quot;../views/container/start&quot;) %&gt;
 &lt;h1&gt;Search&lt;/h1&gt;
@@ -558,7 +558,7 @@ Posting a New Topic
 Display Page Manipulated
 ========================</p>
 <p>We display the scores of the users, on the <code>/scores</code> page. The users see the anonymous name of the users in the table. The displayed items in the table are shuffled each time.</p>
-<p>If in the admin interface the scores are not provided, the scores collumns will not appear in the scores. In a similar way it happens for the urls: if we don&rsquo;t enter the urls, the urls collumns will not appear in the scores page.</p>
+<p>If in the admin interface the scores are not provided, the scores collumns will not appear in the scores. In a similar way it happens for the urls: if we don&rsquo;t enter the one, the url&rsquo;s columns will not appear in the scores page.</p>
 <p>When the user clicks on the <kbd>View scores</kbd> button, we collect stats:</p>
 <ul>
 <li><code>actor</code>: the user id who clicked the button</li>
@@ -568,7 +568,7 @@ Display Page Manipulated
 </ul>
 <p>Similar things happen when one clicks the Project url or the GitHub repository url. We know what was clicked and who did it.</p>
 <p>In the scores controller (the <code>controllers/scores.js</code> file) a query to fetch the users from a certain forum is made. Then we get the active scores and urls for the current phase of the contest and create an array which is passed to the scores view.
-To keep the users semi-anonymous, we change the usernames into <code>Hacker {1-...}</code>. Then the users array is shuffled.</p>
+To keep the users semi-anonymous, we change the usernames into <code>Hacker {1-...}</code>. Then the user&rsquo;s array is shuffled.</p>
 <p>This is the code snippet which fetches the users, modifies the usernames and shuffles the array.</p>
 <pre><code class="language-js">User.model.find({
     &quot;profile.hack_type&quot;: user.profile.hack_type,
@@ -628,7 +628,7 @@ Admin Interface
 ================</p>
 <p>An admin can access additional functionality (such as deleting and editing any post).
 They have access to the dashboard (<code>/admin</code>) where they can make other users admins.
-If nobody is admin (say there are no users), we can make somebody an admin (even if
+If nobody is an admin (say there are no users), we can make somebody an admin (even if
 they don&rsquo;t exist <em>yet</em> in the database) by assiging the GitHub username of an eventual
 user to the environment variable called <code>ADMIN_USERNAME</code>.</p>
 <p>The <code>ADMIN_USERNAME</code> environment variable represents the GitHub username of the user
@@ -665,11 +665,11 @@ ADMIN_USERNAME=hackpurdue npm run start:dev</code></p>
 Custom Database Filters for Admins
 ==================================</p>
 <p>For simple users, the database queries include the <code>author</code>, being the current authenticated user.
-When the user has admin permissions, we do not append anymore the <code>author</code> the queries, therefore making the queries more liberal, giving more power to the admin.</p>
+When the user has admin permissions, we do not append anymore the <code>author</code> queries, therefore making the queries more liberal, giving more power to the admin.</p>
 <p>For instance, when deleting a post, the user will create the following query:</p>
 <p><em>delete the post with <code>_id</code>=&hellip; and <code>author=...</code></em></p>
 <p>Therefore, if the user tries to delete another post, having the id, that post will not be found because it is not created by the authenticated user.</p>
-<p>Tho, if the user is an admin, the query is simpler, lacking the <code>author</code> field (we want to give them the power to delete any post):</p>
+<p>If the user is an admin, the query is simpler, lacking the <code>author</code> field (we want to give them the power to delete any post):</p>
 <p>*delete the post with <code>_id=...</code> *</p>
 <p>This is happening in the <code>app/controllers/posts/_topicId-_slug/delete.js</code> controller:</p>
 <pre><code class="language-js">const Topic = require(&quot;../../Topic&quot;)
@@ -780,7 +780,7 @@ The database models are stored in the <code>app/models</code> directory:</p>
 <ol>
 <li>Open the application <em>Overview</em>  page <code>https://dashboard.heroku.com/apps/ironhackplatform</code></li>
 <li>
-<p>Clik the <code>mLab MongoDB</code>. This will redirect to an url like this:</p>
+<p>Click the <code>mLab MongoDB</code>. This will redirect to an url like this:</p>
 <p><code>https://www.mlab.com/databases/heroku_...</code>
  3. On this page, we can see the collections and eventually the documents and edit them.</p>
 </li>
