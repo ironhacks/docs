@@ -30,7 +30,7 @@ We assume you are familiarized with all these librarires, how they work, and how
 
 # Project structure
 
-The platform is a follow the react-creat-app structure:
+The platform is a follow the react-create-app structure:
 
 - ./
 - .gitignore
@@ -45,4 +45,4 @@ The platform is a follow the react-creat-app structure:
   - js/
     - source files and entry point.
 
-We will get into details on the contents bellow.
+We will get into details on the contents below.
