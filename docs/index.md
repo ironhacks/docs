@@ -1,4 +1,6 @@
-# IronHacks.com
+# IronHacks
+
+![](https://i.imgur.com/AFRx2Gy.jpg)
 
 > Hack for innovation to solve global challenges.
 
