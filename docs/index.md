@@ -3,8 +3,6 @@
 The IronHacks framework will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
 
-Look how easy it is to use the IronHacks framework.
-
 ## Authors
 
 - Research Center for Open Digital Innovation
