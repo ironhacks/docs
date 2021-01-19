@@ -1,6 +1,6 @@
 # IronHacks
 
-![](https://i.imgur.com/AFRx2Gy.jpg)
+![](./assets/img/ironhacks.jpg)
 
 > Hack for innovation to solve global challenges.
 
@@ -19,7 +19,7 @@ During an iterative multiphase process, the competing participants have access t
 - Workspace - A workspace that integrates to Jupyter Lab and Big Query that allows you to hack in the cloud with no set-up time and costs
 - Feedback - A dashboard with real-time ratings about your submissions as well as access to your peer's solutions.
 
-## Impact 
+## Impact
 
 Since 2015, more than 1000 participants have hacked in parallel virtually around the globe gaining valuable experience in coding as well as work for the chance to win internships, Amazon gift cards, cool swag, and certificates. In addition to the participation and learning, IronHacks provides the opportunity to do research on open innovation contest processes.
 
