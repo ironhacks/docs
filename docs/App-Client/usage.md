@@ -32,7 +32,7 @@ When deployed to Heroku, the application url is `https://<app-name>.herokuapp.co
 **Note:** When using a free dyno, it's working fine, but with some limitations:
 
  - it's slower
- - it's going to sleep if it's innactive for a certain period of time.
+ - it's going to sleep if it's inactive for a certain period of time.
  - it has bandwidth limits, but pretty liberal
 
 The app configuration is stored in the `bloggify.js` file.
@@ -260,8 +260,8 @@ In the view file (`app/routes/quizzes.ajs`) we have the part which renders the l
 <% include("../views/footer") %>
 ```
 
-The data associated with this view is storred in the controller (`app/controllers/quizzes.js`)–see below. The user can click the generated link which contains information about the user (the email address and the user id)–which are storred in the Qualtrics quiz responses as embedded data, and also the redirect url.
-When the user finishes the quiz, they are redirected back the application, on the `/quizzes` page and the application marks the quiz complete internally. Even the quiz was completed, the user can take it again.
+The data associated with this view is stored in the controller (`app/controllers/quizzes.js`)–see below. The user can click the generated link which contains information about the user (the email address and the user id)–which are stored in the Qualtrics quiz responses as embedded data, and also the redirect url.
+When the user finishes the quiz, they are redirected back the application, on the `/quizzes` page and the application marks the quiz complete internally. Even if the quiz was completed, the user can take it again.
 
 ```js
 const Bloggify = require("bloggify")
@@ -329,7 +329,7 @@ Search
 
 On the search page (`/search`) we can search for content which appears either in the post data or in the comments.
 
-The view associated with this page is storred in the `app/routes/search.ajs` and it looks like this:
+The view associated with this page is stored in the `app/routes/search.ajs` and it looks like this:
 
 ```erb
 <% include("../views/header", { title: "Search" }) %>
@@ -507,7 +507,7 @@ Display Page Manipulated
 
 We display the scores of the users, on the `/scores` page. The users see the anonymous name of the users in the table. The displayed items in the table are shuffled each time.
 
-If in the admin interface the scores are not provided, the scores collumns will not appear in the scores. In a similar way it happens for the urls: if we don't enter the urls, the urls collumns will not appear in the scores page.
+If in the admin interface the scores are not provided, the scores collumns will not appear in the scores. In a similar way it happens for the urls: if we don't enter the one, the url's columns will not appear in the scores page.
 
 When the user clicks on the <kbd>View scores</kbd> button, we collect stats:
 
@@ -519,7 +519,7 @@ When the user clicks on the <kbd>View scores</kbd> button, we collect stats:
 Similar things happen when one clicks the Project url or the GitHub repository url. We know what was clicked and who did it.
 
 In the scores controller (the `controllers/scores.js` file) a query to fetch the users from a certain forum is made. Then we get the active scores and urls for the current phase of the contest and create an array which is passed to the scores view.
-To keep the users semi-anonymous, we change the usernames into `Hacker {1-...}`. Then the users array is shuffled.
+To keep the users semi-anonymous, we change the usernames into `Hacker {1-...}`. Then the user's array is shuffled.
 
 This is the code snippet which fetches the users, modifies the usernames and shuffles the array.
 
@@ -587,7 +587,7 @@ Admin Interface
 
 An admin can access additional functionality (such as deleting and editing any post).
 They have access to the dashboard (`/admin`) where they can make other users admins.
-If nobody is admin (say there are no users), we can make somebody an admin (even if
+If nobody is an admin (say there are no users), we can make somebody an admin (even if
 they don't exist *yet* in the database) by assiging the GitHub username of an eventual
 user to the environment variable called `ADMIN_USERNAME`.
 
@@ -630,7 +630,7 @@ Custom Database Filters for Admins
 ==================================
 
 For simple users, the database queries include the `author`, being the current authenticated user.
-When the user has admin permissions, we do not append anymore the `author` the queries, therefore making the queries more liberal, giving more power to the admin.
+When the user has admin permissions, we do not append anymore the `author` queries, therefore making the queries more liberal, giving more power to the admin.
 
 For instance, when deleting a post, the user will create the following query:
 
@@ -638,7 +638,7 @@ For instance, when deleting a post, the user will create the following query:
 
 Therefore, if the user tries to delete another post, having the id, that post will not be found because it is not created by the authenticated user.
 
-Tho, if the user is an admin, the query is simpler, lacking the `author` field (we want to give them the power to delete any post):
+If the user is an admin, the query is simpler, lacking the `author` field (we want to give them the power to delete any post):
 
 
 *delete the post with `_id=...` *
@@ -771,7 +771,7 @@ mongo ....mlab.com:63758/heroku_... -u <dbuser> -p <dbpassword>
 or we can see that in the browser:
 
  1. Open the application *Overview*  page `https://dashboard.heroku.com/apps/ironhackplatform`
- 2. Clik the `mLab MongoDB`. This will redirect to an url like this:
+ 2. Click the `mLab MongoDB`. This will redirect to an url like this:
 
     ```
     https://www.mlab.com/databases/heroku_...
@@ -797,7 +797,6 @@ module.exports = {
 ```
 
 ###### `Settings`
-
 Stores the application settings.
 
 ```sh
