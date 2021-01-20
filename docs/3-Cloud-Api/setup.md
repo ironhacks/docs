@@ -31,11 +31,6 @@ In order to make it work, you must set the following env variables:
 + From your firebase project:
   + database.url = "Realtime database URL" (Keep in mind we don't use it, this is just to create the admin instance.) [Docs](https://firebase.google.com/docs/admin/setup)
   + database.bucket = "Your storage bucket URL" [Docs](https://firebase.google.com/docs/storage/web/start)
-+ From Amazon SES:
-  + amazonses.key: "Your Key"
-  + amazonses.secret: "Your Secret"
-+ From Github
-  + githubapi.personalkey: "Your Key"
 
 
 NOTE: You need to create the service-account.json file on the Firebase console

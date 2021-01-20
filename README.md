@@ -1,13 +1,10 @@
 # IronHacks Platform Docs
 
-Read the Docs style manual for the IronHacks platform and Application client.
+Documentation is generated using Markdown with __MkDocs__ and the *Read the Docs* style theme.
 
 The following documents cover information for the following RCODI IronHacks projects that make up the IronHacks Ecosystem
 
-- rcodi/ironhacks-app
-- rcodi/ironhacks-cloud-api
-- rcodi/ironhacks-docs
-
+Docs files can be hosted on GitHub Pages in a separate repository or can exist as a subfolder of an individual project, or can live on it's own `gh-pages` branch within a repository. GitHub will automattically update the documentation each time files under these locations are changed with a new commit.
 
 ## Setup
 
@@ -24,6 +21,32 @@ These optional and most are already included with MKDocs
 - [python-markdown/extensions/](https://python-markdown.github.io/extensions/)
 
 List of builtin markdown extensions: [python-markdown.github.io/extensions/](https://python-markdown.github.io/extensions/)
+
+
+### Project layout
+
+    mkdocs.yml        # The configuration file.
+    docs/
+      - index.md      # The documentation homepage.
+      - sectionA.md   # Other markdown pages
+      ...
+
+      subfolder/      # Creates a new section with the title of the folder
+          - index.md
+          - sectionB.md  
+
+
+### Config
+
+**mkdocs.yml**
+
+```yaml
+theme: 'readthedocs'
+```
+
+__List of all mkdocs config options:__
+
+[mkdocs.org/user-guide/configuration](https://www.mkdocs.org/user-guide/configuration/)
 
 ### Usage
 
