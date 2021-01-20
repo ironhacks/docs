@@ -9,7 +9,7 @@
   
   <link rel="canonical" href="https://ironhacks.github.io/docs/1-Platform-Documentation/">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Platform Documentation - IronHacks Platform</title>
+  <title>Platform Overview - IronHacks Platform</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -19,7 +19,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Platform Documentation";
+    var mkdocs_page_name = "Platform Overview";
     var mkdocs_page_input_path = "1-Platform-Documentation/index.md";
     var mkdocs_page_url = "/docs/1-Platform-Documentation/";
   </script>
@@ -54,8 +54,12 @@
                 </ul>
                 <p class="caption"><span class="caption-text">1 Platform Documentation</span></p>
                 <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Platform Documentation</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Platform Overview</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#platform-features">Platform Features</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#platform-users">Platform Users</a>
+    </li>
     </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="admin/">Admin</a>
@@ -114,7 +118,7 @@
         
       
     
-    <li>Platform Documentation</li>
+    <li>Platform Overview</li>
     <li class="wy-breadcrumbs-aside">
       
         <a href="https://github.com/ironhacks/docs/blob/master/docs/1-Platform-Documentation/index.md"
@@ -128,7 +132,35 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="platform-documentation">Platform Documentation</h1>
+                <h1 id="platform-overview">Platform Overview</h1>
+<p>IronHacks is a cloud-based data science platform developed by the RCODI team.</p>
+<p><img alt="" src="img/platform-overview.jpg" /></p>
+<p>The IronHacks application (a) is written in React. The application is hosted on Google Firebase (b) which also provides cloud file storage, the application database, and serverless functions used by services outside the platform that interact with the IronHacks database.</p>
+<p>A second server hosted on DigitalOcean (c) provides the JupyterHub/JupyterLab web-based notebook service used by participants.</p>
+<p>Data used in the hack requires special consideration due to both technical and licensing issues. Google Cloud Platform services (d) are used to store very large datasets and to provide a secure API that the participants can access the challenge data directly in the hosted notebook environment.</p>
+<p>The team uses GitHub (e) for version control, issue tracking, and project management.</p>
+<h2 id="platform-features">Platform Features</h2>
+<p>Key platform features include:</p>
+<ul>
+<li>A cloud-based data science workspace to perform data science tasks in the cloud using Juptyer notebooks,</li>
+<li>Event specific announcement banners,</li>
+<li>Markdown document editor for challenge task description, rules, and tutorials,</li>
+<li>Participant file and form submission tool,</li>
+<li>Event forum with email notification system for new posts,</li>
+<li>Submission scoring tools</li>
+<li>Results management system including downloadable reports,</li>
+<li>Interactive results dashboard,</li>
+<li>Jupyter notebook web viewer to view submissions directly in the app,</li>
+<li>Integration with Qualtrics surveys.</li>
+</ul>
+<h2 id="platform-users">Platform Users</h2>
+<p>Users on the platform can be one of two types.</p>
+<ul>
+<li>Participants</li>
+<li>Administrators</li>
+</ul>
+<p><em>Participants</em> register for hacks, comment on forum posts, work on tasks in the workspace, submit files, and view the results dashboard.</p>
+<p><em>Admin</em> users are able to create/setup hacks, create submissions, create forum posts, edit task and tutorials, and manage the results dashboard.</p>
               
             </div>
           </div>
