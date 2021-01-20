@@ -60,6 +60,10 @@
                     </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Hack Admin</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#hack-settings">Hack Settings</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#hack-content">Hack Content</a>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -125,7 +129,7 @@
 <p>Admin users must be manually added by a developer.</p>
 </blockquote>
 <p>Platform admins can create and manage hacks from the administrator portal at <code>/admin</code>.</p>
-<p><strong>Hack Settings</strong></p>
+<h2 id="hack-settings">Hack Settings</h2>
 <p><img alt="" src="../img/ironhacks-admin.jpg" /></p>
 <p>The hack settings page allows you to update content for a hack including</p>
 <ul>
@@ -140,6 +144,19 @@
 <li>registration survey - if this is filled in then participants will be required to fill in the survey when registering</li>
 <li>difficulty - sets the hack difficulty category  </li>
 </ul>
+<h2 id="hack-content">Hack Content</h2>
+<p>Content for the hack can be added in several places in the admin area using the integrated markdown editor.</p>
+<p><strong>Overview Page</strong></p>
+<p>The hack overview page is the landing page for the hack. This content is also displayed on the hack registration page.</p>
+<p><strong>Rules Page</strong></p>
+<p>If <code>rules enabled</code> is checked in the hack display settings then the content here will be displayed on the rules page.</p>
+<p><strong>Task Page</strong></p>
+<p>The task page has a unique property that allows you create multiple task documents which can be shown to specific cohorts (managed in the cohort settings area). You should set the default task document if you do not intend to use this feature, which will be shown to any user not in a cohort or if that participants cohort does not have a set task.</p>
+<p>Only one task can ever be shown to the participant.</p>
+<p>Each task may enable the a survey url to be included before the task is viewable by the user (this must be manually enabled for each task).</p>
+<p>To include the task page in the hack navigation area <code>task enabled</code> you must click <code>publish task</code> in the admin task editor view. This feature was created to help track the specific event timing between the start of the hack, registration, and when the task is made avaiable (when users can actually start working on their submission).</p>
+<p><strong>Tutorials Page</strong></p>
+<p>You can create multiple tutorials which will be displayed in the hack tutorials list.</p>
               
             </div>
           </div>
