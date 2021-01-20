@@ -46,3 +46,20 @@ To include the task page in the hack navigation area `task enabled` you must cli
 __Tutorials Page__
 
 You can create multiple tutorials which will be displayed in the hack tutorials list.
+
+## Hack Submissions
+
+Submissions have the following properties:
+
+- Name
+- Submission Id
+- Deadline
+- Survey Url
+- Description
+- Submisison Options
+  - Submission Summary
+  - Submission Tags
+- Additional Fields
+- Submission Files
+- Submission Enabled
+- Solution File
