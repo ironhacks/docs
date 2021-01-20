@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <link rel="canonical" href="https://ironhacks.github.io/docs/2-Developer-Documentation/overview/">
+  <link rel="canonical" href="https://ironhacks.github.io/docs/2-Developer-Documentation/metrics/">
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Overview - IronHacks Platform</title>
+  <title>Platform Metrics - IronHacks Platform</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -19,9 +19,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Overview";
-    var mkdocs_page_input_path = "2-Developer-Documentation/overview.md";
-    var mkdocs_page_url = "/docs/2-Developer-Documentation/overview/";
+    var mkdocs_page_name = "Platform Metrics";
+    var mkdocs_page_input_path = "2-Developer-Documentation/metrics.md";
+    var mkdocs_page_url = "/docs/2-Developer-Documentation/metrics/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js" defer></script>
@@ -60,22 +60,38 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../1-Platform-Documentation/hack-setup/">Hack Admin</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../1-Platform-Documentation/metrics/">Platform Metrics</a>
-                    </li>
                 </ul>
                 <p class="caption"><span class="caption-text">2 Developer Documentation</span></p>
                 <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../install/">Install</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Overview</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Platform Metrics</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#event-list">Event List</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#default-events">DEFAULT EVENTS</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#authentication-registration-events">AUTHENTICATION &amp; REGISTRATION EVENTS</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#general-platform-events">GENERAL PLATFORM EVENTS</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#hack-events">HACK EVENTS</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#content-viewing-events">Content Viewing Events</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#user-interaction-events">User Interaction Events</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#results-dashboard-events-during-hack">Results Dashboard Events (DURING HACK)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#admin-only">ADMIN ONLY</a>
+    </li>
+        </ul>
+    </li>
     </ul>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../references/">References</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../services/">Preparation</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../usage/">Usage</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">3 Cloud Api</span></p>
@@ -85,8 +101,6 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../3-Cloud-Api/requirements/">Requirements</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../3-Cloud-Api/setup/">Setup</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../3-Cloud-Api/usage/">Usage</a>
                     </li>
                 </ul>
       </div>
@@ -114,10 +128,10 @@
         
       
     
-    <li>Overview</li>
+    <li>Platform Metrics</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/ironhacks/docs/blob/master/docs/2-Developer-Documentation/overview.md"
+        <a href="https://github.com/ironhacks/docs/blob/master/docs/2-Developer-Documentation/metrics.md"
           class="icon icon-github"> Edit on Github</a>
       
     </li>
@@ -128,52 +142,67 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="about-mkdocs">About MkDocs</h2>
-<p>Documentation is generated using Markdown with <strong>MkDocs</strong> and the <em>Read the Docs</em> style theme.</p>
-<p>Docs files can be hosted on GitHub Pages in a separate repository or can exist as a subfolder of an individual project, or can live on it&rsquo;s own <code>gh-pages</code> branch within a repository. GitHub will automattically update the documentation each time files under these locations are changed with a new commit.</p>
-<p>For full documentation visit <a href="https://mkdocs.org">mkdocs.org</a>.</p>
-<hr />
-<h2 id="commands">Commands</h2>
+                <h1 id="platform-metrics">Platform Metrics</h1>
+<h2 id="event-list">Event List</h2>
+<h3 id="default-events">DEFAULT EVENTS</h3>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
+<li><code>app_load</code></li>
 </ul>
-<p><strong>Options</strong></p>
-<p>mkdocs build &ndash;clean</p>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml        # The configuration file.
-docs/
-  - index.md      # The documentation homepage.
-  - sectionA.md   # Other markdown pages
-  ...
-
-  subfolder/      # Creates a new section with the title of the folder
-      - index.md
-      - sectionB.md
-</code></pre>
-<h2 id="setup">Setup</h2>
-<p><strong>mkdocs.yml</strong></p>
-<pre><code class="language-yaml">theme: 'readthedocs'
-</code></pre>
-<h2 id="config">Config</h2>
-<p><strong>List of all mkdocs config options:</strong></p>
-<p><a href="https://www.mkdocs.org/user-guide/configuration/">mkdocs.org/user-guide/configuration</a></p>
-<h2 id="extensions">Extensions</h2>
-<p>Install with <code>pip install &lt;EXTENSION_NAME&gt;</code></p>
-<p>Currently Using:</p>
+<h3 id="authentication-registration-events">AUTHENTICATION &amp; REGISTRATION EVENTS</h3>
 <ul>
-<li>smarty</li>
-<li>extra</li>
-<li>toc</li>
-<li>meta</li>
-<li>tables</li>
-<li>fenced_code</li>
-<li>markdown_checklist.extension</li>
+<li><code>user_signup</code></li>
+<li><code>user_login</code></li>
+<li><code>user_logout</code></li>
 </ul>
-<p><strong>List of Markdown Extensions</strong></p>
-<p><a href="https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions">github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions</a></p>
+<h3 id="general-platform-events">GENERAL PLATFORM EVENTS</h3>
+<ul>
+<li><code>download_file</code></li>
+<li><code>update_profile</code></li>
+<li><code>register_hack</code></li>
+</ul>
+<h3 id="hack-events">HACK EVENTS</h3>
+<p><em>These events require user registration</em></p>
+<h4 id="content-viewing-events">Content Viewing Events</h4>
+<p><img alt="" src="img/hack_events.jpg" /></p>
+<ul>
+<li><code>view_calendar</code></li>
+<li><code>view_notebook</code></li>
+<li><code>view_overview</code></li>
+<li><code>view_task</code></li>
+<li><code>view_post</code></li>
+<li><code>view_profile</code></li>
+<li><code>view_rules</code></li>
+<li><code>view_tutorial</code></li>
+</ul>
+<h4 id="user-interaction-events">User Interaction Events</h4>
+<ul>
+<li><code>launch_hub</code></li>
+<li><code>open_survey</code></li>
+<li><code>submit_comment</code></li>
+<li><code>user_submission</code></li>
+</ul>
+<h4 id="results-dashboard-events-during-hack">Results Dashboard Events (DURING HACK)</h4>
+<ul>
+<li><code>results_section_view</code></li>
+<li><code>results_phase_view</code></li>
+<li><code>results_notebook_opened</code></li>
+<li><code>results_summary_expanded</code></li>
+</ul>
+<h3 id="admin-only">ADMIN ONLY</h3>
+<ul>
+<li><code>submit_post</code></li>
+<li><code>edit_forum_post</code></li>
+<li><code>overview-updated</code></li>
+<li><code>results-published</code></li>
+<li><code>results-unpublished</code></li>
+<li><code>results-updated</code></li>
+<li><code>rules-updated</code></li>
+<li><code>tutorial-created</code></li>
+<li><code>task-created</code></li>
+<li><code>task-published</code></li>
+<li><code>task-unpublished</code></li>
+<li><code>task-updated</code></li>
+</ul>
               
             </div>
           </div>
@@ -181,7 +210,7 @@ docs/
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../references/" class="btn btn-neutral float-right" title="References">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../services/" class="btn btn-neutral float-right" title="Preparation">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../install/" class="btn btn-neutral" title="Install"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -215,7 +244,7 @@ docs/
         <span><a href="../install/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../references/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../services/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
