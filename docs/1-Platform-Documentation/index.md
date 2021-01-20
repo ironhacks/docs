@@ -25,7 +25,7 @@ Key platform features include:
 - Submission scoring tools
 - Results management system including downloadable reports,
 - Interactive results dashboard,
-- Jupyter notebook web viewer to view submissions directly in the app,
+- Jupyter notebook web viewer to view submissions or example files directly in the app,
 - Integration with Qualtrics surveys.
 
 ## Platform Users
