@@ -62,4 +62,19 @@ Submissions have the following properties:
 - additional fields - each field created adds an additional question and text input field to the submission.  Each field can optionally be set as required.
 - submission files - each file field added to the submission sets the filename and extension that is allowed to be uploaded in the submission form. File fields may optionally be set as required.
 - submission enabled - submissions must be set to `enabled` to be active. If the submission is not enabled, they will be present in the submission list but participants will not be able to use the form or upload files.
-- solution file - each submission accepts a single file attachment for internal use only to be used in the scoring process. Currently this is used for file management and retrieval purposes only. 
+- solution file - each submission accepts a single file attachment for internal use only to be used in the scoring process. Currently this is used for file management and retrieval purposes only.
+
+
+## Hack Results
+
+__Results Dashboard Document__
+
+The results page features a single markdown editor that can be used to display information about the results area below the scores section of the results dashboard. Information about the scoring processes or detailed information about how certain metrics are created are typically shown along with the scores.
+
+__Submission Results Editor__
+
+Every submission created has an entry in the admin results area which also shows if that result set has been published yet. Submission scores are computed outside of the platform and uploaded via the results editor. In the results editor area admin users can paste the submission results set into the field, validate the content (checks for syntax errors only), and save the results to the database.
+
+After the results are saved, they can be downloaded again by hitting the download button and the stats button downloads a summary statistics report.
+
+Results saved in the admin results editor are not displayed in the participant dashboard until they are published by hitting the "Publish Results". This is intended to allow for work in progress and checking for correctness before they are seen by the users.
