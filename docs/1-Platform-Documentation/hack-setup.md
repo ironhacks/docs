@@ -51,15 +51,15 @@ You can create multiple tutorials which will be displayed in the hack tutorials 
 
 Submissions have the following properties:
 
-- Name
-- Submission Id
-- Deadline
-- Survey Url
-- Description
-- Submisison Options
-  - Submission Summary
-  - Submission Tags
-- Additional Fields
-- Submission Files
-- Submission Enabled
-- Solution File
+- name - the displayed name of the submission
+- submission id - the id of the submission used in the database and url paths
+- deadline - after this time the submission will be closed
+- description - content written in markdown used to describe the background and requirements of the submission
+- survey url - if this field is set the linked survey will be shown when the user hits the submit button
+- submission options
+    - submission summary - if this is checked a text summary text field is added to the submission form
+    - submission tags - if this is checked an additional multi-select field will be included with a list of tags
+- additional fields - each field created adds an additional question and text input field to the submission.  Each field can optionally be set as required.
+- submission files - each file field added to the submission sets the filename and extension that is allowed to be uploaded in the submission form. File fields may optionally be set as required.
+- submission enabled - submissions must be set to `enabled` to be active. If the submission is not enabled, they will be present in the submission list but participants will not be able to use the form or upload files.
+- solution file - each submission accepts a single file attachment for internal use only to be used in the scoring process. Currently this is used for file management and retrieval purposes only. 
