@@ -64,6 +64,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#hack-content">Hack Content</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#hack-user-cohorts">Hack User Cohorts</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#hack-submissions">Hack Submissions</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#hack-results">Hack Results</a>
@@ -146,7 +148,7 @@
 <li>registration open - manually sets the registration open or closed</li>
 <li>display options - sets which pages will be visible in the hack navigation</li>
 <li>registration survey - if this is filled in then participants will be required to fill in the survey when registering</li>
-<li>difficulty - sets the hack difficulty category  </li>
+<li>difficulty - sets the hack difficulty category</li>
 </ul>
 <h2 id="hack-content">Hack Content</h2>
 <p>Content for the hack can be added in several places in the admin area using the integrated markdown editor.</p>
@@ -161,6 +163,26 @@
 <p>To include the task page in the hack navigation area <code>task enabled</code> you must click <code>publish task</code> in the admin task editor view. This feature was created to help track the specific event timing between the start of the hack, registration, and when the task is made avaiable (when users can actually start working on their submission).</p>
 <p><strong>Tutorials Page</strong></p>
 <p>You can create multiple tutorials which will be displayed in the hack tutorials list.</p>
+<h2 id="hack-user-cohorts">Hack User Cohorts</h2>
+<p>Cohorts allow participants to be segmented into different groups with additional features that can be enabled.</p>
+<p><strong>Cohort Options</strong></p>
+<ul>
+<li>
+<p><strong><em>Cohort Task</em></strong> - Each cohort can be assigned to a different task document (created in the admin tasks area).  If no cohort is assigned to a participant or if a task is not set for a certain cohort the default task is shown.</p>
+</li>
+<li>
+<p><strong><em>Show Summaries</em></strong> - If <code>show summaries</code> is enabled participants in this cohort will have access to the &lsquo;peers&rsquo; tab in the results dashboard and will be shown the submission summary, and tags fields from other users in their cohort.</p>
+</li>
+<li>
+<p><strong><em>Show Notebooks</em></strong> - If <code>show notebooks</code> is enabled participants in this cohort will have access to the &lsquo;peers&rsquo; tab in the results dashboard and will be shown links to view the notebook files submitted by other users in their cohort.</p>
+</li>
+</ul>
+<p><strong>Assigning Cohorts</strong></p>
+<p>There is no limit to the number of cohort groups.</p>
+<p>New cohorts can be created by selecting the <code>add cohort</code> button and the save button. If a new cohort is created after assigning users to cohorts, there will be no participants assigned to this cohort and you may need reassign groups or manually assign them in the database.</p>
+<p>Cohorts can be deleted by selecting the <code>delete cohort</code> button and the save button.  If a cohort is deleted after assigning users to cohorts, these participants will become unassigned. <em>Doing this may lead to unintended effects.</em></p>
+<p>Participants should only be assigned to cohorts once. The best time to do this is after registration for the hack is closed.</p>
+<p>To assign users to cohorts select the <code>assign users</code> button at the bottom of the admin cohorts area. This will randomly assign all non-admin participants to a cohort. A list of user id&rsquo;s assigned to each cohort are displayed below the cohort settings section.</p>
 <h2 id="hack-submissions">Hack Submissions</h2>
 <p>Submissions have the following properties:</p>
 <ul>
