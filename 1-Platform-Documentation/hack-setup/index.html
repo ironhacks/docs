@@ -162,18 +162,20 @@
 <h2 id="hack-submissions">Hack Submissions</h2>
 <p>Submissions have the following properties:</p>
 <ul>
-<li>Name</li>
-<li>Submission Id</li>
-<li>Deadline</li>
-<li>Survey Url</li>
-<li>Description</li>
-<li>Submisison Options</li>
-<li>Submission Summary</li>
-<li>Submission Tags</li>
-<li>Additional Fields</li>
-<li>Submission Files</li>
-<li>Submission Enabled</li>
-<li>Solution File</li>
+<li>name - the displayed name of the submission</li>
+<li>submission id - the id of the submission used in the database and url paths</li>
+<li>deadline - after this time the submission will be closed</li>
+<li>description - content written in markdown used to describe the background and requirements of the submission</li>
+<li>survey url - if this field is set the linked survey will be shown when the user hits the submit button</li>
+<li>submission options<ul>
+<li>submission summary - if this is checked a text summary text field is added to the submission form</li>
+<li>submission tags - if this is checked an additional multi-select field will be included with a list of tags</li>
+</ul>
+</li>
+<li>additional fields - each field created adds an additional question and text input field to the submission.  Each field can optionally be set as required.</li>
+<li>submission files - each file field added to the submission sets the filename and extension that is allowed to be uploaded in the submission form. File fields may optionally be set as required.</li>
+<li>submission enabled - submissions must be set to <code>enabled</code> to be active. If the submission is not enabled, they will be present in the submission list but participants will not be able to use the form or upload files.</li>
+<li>solution file - each submission accepts a single file attachment for internal use only to be used in the scoring process. Currently this is used for file management and retrieval purposes only. </li>
 </ul>
               
             </div>
