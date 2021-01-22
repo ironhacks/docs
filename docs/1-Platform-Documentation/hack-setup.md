@@ -19,7 +19,7 @@ The hack settings page allows you to update content for a hack including
 - registration open - manually sets the registration open or closed
 - display options - sets which pages will be visible in the hack navigation
 - registration survey - if this is filled in then participants will be required to fill in the survey when registering
-- difficulty - sets the hack difficulty category  
+- difficulty - sets the hack difficulty category
 
 ## Hack Content
 
@@ -46,6 +46,30 @@ To include the task page in the hack navigation area `task enabled` you must cli
 __Tutorials Page__
 
 You can create multiple tutorials which will be displayed in the hack tutorials list.
+
+## Hack User Cohorts
+
+Cohorts allow participants to be segmented into different groups with additional features that can be enabled.
+
+__Cohort Options__
+
+- __*Cohort Task*__ - Each cohort can be assigned to a different task document (created in the admin tasks area).  If no cohort is assigned to a participant or if a task is not set for a certain cohort the default task is shown.
+
+- __*Show Summaries*__ - If `show summaries` is enabled participants in this cohort will have access to the 'peers' tab in the results dashboard and will be shown the submission summary, and tags fields from other users in their cohort.
+
+- __*Show Notebooks*__ - If `show notebooks` is enabled participants in this cohort will have access to the 'peers' tab in the results dashboard and will be shown links to view the notebook files submitted by other users in their cohort.
+
+__Assigning Cohorts__
+
+There is no limit to the number of cohort groups.
+
+New cohorts can be created by selecting the `add cohort` button and the save button. If a new cohort is created after assigning users to cohorts, there will be no participants assigned to this cohort and you may need reassign groups or manually assign them in the database.
+
+Cohorts can be deleted by selecting the `delete cohort` button and the save button.  If a cohort is deleted after assigning users to cohorts, these participants will become unassigned. *Doing this may lead to unintended effects.*
+
+Participants should only be assigned to cohorts once. The best time to do this is after registration for the hack is closed.
+
+To assign users to cohorts select the `assign users` button at the bottom of the admin cohorts area. This will randomly assign all non-admin participants to a cohort. A list of user id's assigned to each cohort are displayed below the cohort settings section.
 
 ## Hack Submissions
 
