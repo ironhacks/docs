@@ -10,16 +10,16 @@ Platform admins can create and manage hacks from the administrator portal at `/a
 
 The hack settings page allows you to update content for a hack including
 
-- name - The title of the hack
-- slug - the hacks url path
-- description - a brief description of the hack
-- banner image - the image displayed at the top of the overview page
-- thumbnail image - a small image displayed in the hack selection screen
-- publish and unpublish - determines if the hack is visible in the selection screen
-- registration open - manually sets the registration open or closed
-- display options - sets which pages will be visible in the hack navigation
-- registration survey - if this is filled in then participants will be required to fill in the survey when registering
-- difficulty - sets the hack difficulty category
+- __*name*__ - The title of the hack
+- __*slug*__ - the hacks url path
+- __*description*__ - a brief description of the hack
+- __*banner image*__ - the image displayed at the top of the overview page
+- __*thumbnail image*__ - a small image displayed in the hack selection screen
+- __*publish and unpublish*__ - determines if the hack is visible in the selection screen
+- __*registration open*__ - manually sets the registration open or closed
+- __*display options*__ - sets which pages will be visible in the hack navigation
+- __*registration survey*__ - if this is filled in then participants will be required to fill in the survey when registering
+- __*difficulty*__ - sets the hack difficulty category
 
 ## Hack Content
 
@@ -75,18 +75,18 @@ To assign users to cohorts select the `assign users` button at the bottom of the
 
 Submissions have the following properties:
 
-- name - the displayed name of the submission
-- submission id - the id of the submission used in the database and url paths
-- deadline - after this time the submission will be closed
-- description - content written in markdown used to describe the background and requirements of the submission
-- survey url - if this field is set the linked survey will be shown when the user hits the submit button
+- __*name*__ - the displayed name of the submission
+- __*submission id*__ - the id of the submission used in the database and url paths
+- __*deadline*__ - after this time the submission will be closed
+- __*description*__ - content written in markdown used to describe the background and requirements of the submission
+- __*survey url*__ - if this field is set the linked survey will be shown when the user hits the submit button
 - submission options
-    - submission summary - if this is checked a text summary text field is added to the submission form
-    - submission tags - if this is checked an additional multi-select field will be included with a list of tags
-- additional fields - each field created adds an additional question and text input field to the submission.  Each field can optionally be set as required.
-- submission files - each file field added to the submission sets the filename and extension that is allowed to be uploaded in the submission form. File fields may optionally be set as required.
-- submission enabled - submissions must be set to `enabled` to be active. If the submission is not enabled, they will be present in the submission list but participants will not be able to use the form or upload files.
-- solution file - each submission accepts a single file attachment for internal use only to be used in the scoring process. Currently this is used for file management and retrieval purposes only.
+    - __*submission summary*__ - if this is checked a text summary text field is added to the submission form
+    - __*submission tags*__ - if this is checked an additional multi-select field will be included with a list of tags
+- __*additional fields*__ - each field created adds an additional question and text input field to the submission.  Each field can optionally be set as required.
+- __*submission files*__ - each file field added to the submission sets the filename and extension that is allowed to be uploaded in the submission form. File fields may optionally be set as required.
+- __*submission enabled*__ - submissions must be set to `enabled` to be active. If the submission is not enabled, they will be present in the submission list but participants will not be able to use the form or upload files.
+- __*solution file*__ - each submission accepts a single file attachment for internal use only to be used in the scoring process. Currently this is used for file management and retrieval purposes only.
 
 
 ## Hack Results
