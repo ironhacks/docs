@@ -66,6 +66,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#hack-submissions">Hack Submissions</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#hack-results">Hack Results</a>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -175,8 +177,15 @@
 <li>additional fields - each field created adds an additional question and text input field to the submission.  Each field can optionally be set as required.</li>
 <li>submission files - each file field added to the submission sets the filename and extension that is allowed to be uploaded in the submission form. File fields may optionally be set as required.</li>
 <li>submission enabled - submissions must be set to <code>enabled</code> to be active. If the submission is not enabled, they will be present in the submission list but participants will not be able to use the form or upload files.</li>
-<li>solution file - each submission accepts a single file attachment for internal use only to be used in the scoring process. Currently this is used for file management and retrieval purposes only. </li>
+<li>solution file - each submission accepts a single file attachment for internal use only to be used in the scoring process. Currently this is used for file management and retrieval purposes only.</li>
 </ul>
+<h2 id="hack-results">Hack Results</h2>
+<p><strong>Results Dashboard Document</strong></p>
+<p>The results page features a single markdown editor that can be used to display information about the results area below the scores section of the results dashboard. Information about the scoring processes or detailed information about how certain metrics are created are typically shown along with the scores.</p>
+<p><strong>Submission Results Editor</strong></p>
+<p>Every submission created has an entry in the admin results area which also shows if that result set has been published yet. Submission scores are computed outside of the platform and uploaded via the results editor. In the results editor area admin users can paste the submission results set into the field, validate the content (checks for syntax errors only), and save the results to the database.</p>
+<p>After the results are saved, they can be downloaded again by hitting the download button and the stats button downloads a summary statistics report.</p>
+<p>Results saved in the admin results editor are not displayed in the participant dashboard until they are published by hitting the &ldquo;Publish Results&rdquo;. This is intended to allow for work in progress and checking for correctness before they are seen by the users.</p>
               
             </div>
           </div>
