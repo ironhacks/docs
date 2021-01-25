@@ -1,7 +1,7 @@
 ## Introduction
 
 
-This repository contain the Firebase Cloud Function project that take care of the server duties on the IronHacks platform (the platform).
+This repository contains the Firebase Cloud Function project that take care of the server duties on the IronHacks platform (the platform).
 
 Keep in mind that the platform doesn't have a proper backend, the following cloud functions are all the platform needs in order to communicate with the firebase database (both the db and the storage).
 
