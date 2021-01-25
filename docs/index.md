@@ -21,7 +21,7 @@ During an iterative multiphase process, the competing participants have access t
 
 ## Impact
 
-Since 2015, more than 1000 participants have hacked in parallel virtually around the globe gaining valuable experience in coding as well as work for the chance to win internships, Amazon gift cards, cool swag, and certificates. In addition to the participation and learning, IronHacks provides the opportunity to do research on open innovation contest processes.
+Since 2015, more than 1,000 participants have hacked in parallel virtually around the globe gaining valuable experience in coding as well as work for the chance to win internships, Amazon gift cards, cool swag, and certificates. In addition to the participation and learning, IronHacks provides the opportunity to do research on open innovation contest processes.
 
 __Innovation__
 
@@ -29,11 +29,11 @@ Participants developed novel and useful open data solutions in an interactive en
 
 __Globalization__
 
-The virtual setting of hacking has emerged at Purdue and beyond. Participants come from the US, Colombia, and China. Virtual setting encourages a more diverse audience.
+As it encourages a more diverse audience, the virtual setting of our hacking platform has emerged at Purdue and beyond. Participants come from the US, Colombia, and China.
 
 __Research__
 
-The scientific team at Purdue generated new knowledge and technologies on the implications of machine-enabled feedback and transparency on participants' productivity and innovation performance
+The scientific team at Purdue generated new knowledge and technology on the implications of machine-enabled feedback and transparency on participants' productivity and innovation performance.
 
 
 ## Authors
