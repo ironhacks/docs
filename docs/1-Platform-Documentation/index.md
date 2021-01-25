@@ -37,4 +37,4 @@ Users on the platform can be one of two types.
 
 *Participants* register for hacks, comment on forum posts, work on tasks in the workspace, submit files, and view the results dashboard.
 
-*Admin* users are able to create/setup hacks, create submissions, create forum posts, edit task and tutorials, and manage the results dashboard.
+*Admin* users are able to create/setup hacks, create submissions, create forum posts, edit tasks and tutorials, and manage the results dashboard.
