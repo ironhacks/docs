@@ -37,7 +37,7 @@ NOTE: You need to create the service-account.json file on the Firebase console
 
 see url: ___
 
-Do not commit this file to the project repo
+Do not commit this file to the project repo.
 
 
 
