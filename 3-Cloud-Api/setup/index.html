@@ -125,7 +125,7 @@
             <div class="section">
               
                 <h2 id="setting-up-the-dev-environment">Setting up the dev environment</h2>
-<p>This is a clasic Firebase Cloud Functions project, so the &ldquo;installation process&rdquo; is just deploy the functions (AKA this project) into your firebase project.</p>
+<p>This is a clasic Firebase Cloud Functions project, so the &ldquo;installation process&rdquo; is just deploy the functions (AKA this project) into your Firebase project.</p>
 <p>In that matter, we recommend you to use this project as template for your implementation of the platform. In order to set it up, do the following:</p>
 <h3 id="setting-up-the-firebase-cloud-functions-project">Setting up the Firebase Cloud Functions project</h3>
 <ul>
@@ -143,7 +143,7 @@
 <p>If you are not familiar with the base Environment configuration, check <a href="https://firebase.google.com/docs/functions/config-env">the docs</a>.
 In order to make it work, you must set the following env variables:</p>
 <ul>
-<li>From your firebase project:</li>
+<li>From your Firebase project:</li>
 <li>database.url = &ldquo;Realtime database URL&rdquo; (Keep in mind we don&rsquo;t use it, this is just to create the admin instance.) <a href="https://firebase.google.com/docs/admin/setup">Docs</a></li>
 <li>database.bucket = &ldquo;Your storage bucket URL&rdquo; <a href="https://firebase.google.com/docs/storage/web/start">Docs</a></li>
 </ul>
@@ -151,7 +151,8 @@ In order to make it work, you must set the following env variables:</p>
 <p>see url: ___</p>
 <p>Do not commit this file to the project repo.</p>
 <h2 id="initialization">Initialization</h2>
-<p>Keep in mind that once you set these variables, they are stored in the firebase project itself, not in your local machine. There is no need to set them again if you switch to another computer.</p>
+<p>Keep in mind that once you set these variables, they are stored in the 
+base project itself, not in your local machine. There is no need to set them again if you switch to another computer.</p>
 <p><strong>IMPORTANT:</strong> <em>The pirvate keys ARE PRIVATE, do not upload to github nor share those key in the web. This is sensitive data that should remain saved on a local machine, under the responsibility of the administrator of the project.</em></p>
 <p>If you are not sure about how to get these keys, please refer to the documentation of each library.</p>
               
