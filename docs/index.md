@@ -19,8 +19,6 @@ During an iterative multiphase process, the competing participants have access t
 - Workspace - A workspace that integrates to Jupyter Lab and Big Query that allows you to hack in the cloud with no set-up time and costs
 - Feedback - A dashboard with real-time ratings about your submissions as well as access to your peer's solutions.
 
-<<<<<<< HEAD
-
 
 ## Research: An Infrastructure for large-scale experiments
 
@@ -30,8 +28,6 @@ The platform offers research that other experimental platforms (O-tree, voluntee
 
 The IronHacks team is seeking contributions from other researchers to advance the platform's feature for experimenting. 
 
-=======
->>>>>>> 5e00d1a3cd5a0196ac3ae37728686f8accfdc163
 ## Impact
 
 Since 2015, more than 1,000 participants have hacked in parallel virtually around the globe gaining valuable experience in coding as well as work for the chance to win internships, Amazon gift cards, cool swag, and certificates. In addition to the participation and learning, IronHacks provides the opportunity to do research on open innovation contest processes.
