@@ -6,7 +6,7 @@ Platform admins can create and manage hacks from the administrator portal at `/a
 
 ## Hack Settings
 
-![](./img/ironhacks-admin.jpg)
+![](./img/ironhacks-admin2022.png)
 
 The hack settings page allows you to update content for a hack including
 
@@ -46,6 +46,14 @@ To include the task page in the hack navigation area `task enabled` you must cli
 __Tutorials Page__
 
 You can create multiple tutorials which will be displayed in the hack tutorials list.
+
+__Examples Page__
+
+You can create multiple examples and set it to designated cohort for which you want to experiment.
+
+__Notes Page__
+
+It's an internal admin feature for discussion and tracking feature and bugs.
 
 ## Hack User Cohorts
 
