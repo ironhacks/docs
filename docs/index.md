@@ -9,11 +9,11 @@ by providing a basic explanation of how to do it easily.
 
 ## Background
 
-IronHacks brings together a virtual hacking community who participate in high-energy IronHacks challenges. The IronHacks platform offers participants a no setup workspace and many powerful features. Participants get access to a Juypter Lab, BIG datasets, dashboards, tutorials so that they can excel in data exploration, prediction and visualization. The platform is accessible [here](https://ironhacks.com)
+IronHacks brings together a virtual hacking community who participate in high-energy IronHacks challenges. The IronHacks platform offers participants a no setup workspace and many powerful features. Participants get access to a [Juypter Lab with GPU](https://ironhub.live/hub/login), BIG datasets, dashboards, tutorials so that they can excel in data exploration, prediction and visualization. The platform is accessible [here](https://ironhacks.com)
 
 ## Features
 
-During an iterative multiphase process, the competing participants have access to tutorials, standardized libraries and packages, and virtual help sessions. After each phase, submissions are evaluated within a few hours or days with the help of machine intelligence and human experts. Real-time and targeted feedback accelerate learning and facilitate participants in hacking complex problems.
+During an iterative multiphase process, the competing participants have access to GPUs, tutorials, standardized libraries and packages, and virtual help sessions. After each phase, submissions are evaluated within a few hours or days with the help of machine intelligence and human experts. Real-time and targeted feedback accelerate learning and facilitate participants in hacking complex problems.
 
 - Challenges - Easy access to past, current, and future challenges
 - Workspace - A workspace that integrates to Jupyter Lab and Big Query that allows you to hack in the cloud with no set-up time and costs
