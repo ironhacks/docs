@@ -53,19 +53,22 @@ You can create multiple examples and set it to designated cohort for which you w
 
 You can also create a viewable notebook from this sections, Steps to follow:
 
-- __*1*__ - Upload the ipynb to github to get the raw content url of the notebook.
+
+1. Upload the ipynb to github to get the raw content url of the notebook.
 
 
-- __*2*__ - Go the the create a new notebook section in the examples page.
+2. Go the the create a new notebook section in the examples page.
 
 
-- __*3*__ - Write the desired title in the title section
+3. Write the desired title in the title section
 
 
-- __*4*__ - In the text section, just pase the URL.
+4. In the text section, just pase the URL.
 
 
-- __*5*__ - Hooray, you will get a button which will link to the notebook on the IronHacks app.
+5. Hooray, you will get a button which will link to the notebook on the IronHacks app.
+
+
 
 Little trick: Use this link "https://ironhacks.com/notebook-viewer?path=", and just copy the path here directly and you can view any python notebook in the app.
 
