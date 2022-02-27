@@ -52,10 +52,19 @@ __Examples Page__
 You can create multiple examples and set it to designated cohort for which you want to experiment.
 
 You can also create a viewable notebook from this sections, Steps to follow:
+
 1. Upload the ipynb to github to get the raw content url of the notebook.
+
+
 2. Go the the create a new notebook section in the examples page.
+
+
 3. Write the desired title in the title section
+
+
 4. In the text section, just pase the URL.
+
+
 5. Hooray, you will get a button which will link to the notebook on the IronHacks app.
 
 Little trick: Use this link "https://ironhacks.com/notebook-viewer?path=", and just copy the path here directly and you can view any python notebook in the app.
