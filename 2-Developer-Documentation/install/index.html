@@ -138,6 +138,15 @@
 <p>Now you can start the local server via npm start:</p>
 <pre><code class="language-bash">npm run start
 </code></pre>
+<h2 id="note">Note</h2>
+<p>The Firebase config is injected during start or build from values set in the <code>.env</code> file. These values should not be added to version control. </p>
+<pre><code class="language-sh">REACT_APP_ENV=&quot;development&quot;
+REACT_APP_FIREBASE_APIKEY=&quot;&quot;
+REACT_APP_FIREBASE_APIKEY_DEV=&quot;&quot;
+REACT_APP_MESSAGE=&quot;&quot;
+</code></pre>
+<p>These values can be found on the Firebase project settings.</p>
+<p>https://console.firebase.google.com/</p>
               
             </div>
           </div>
