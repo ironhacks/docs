@@ -17,18 +17,19 @@ The team uses GitHub (e) for version control, issue tracking, and project manage
 
 Key platform features include:
 
-- A cloud-based data science workspace to perform data science tasks in the cloud using Juptyer notebooks,
-- Event specific announcement banners,
-- Markdown document editor for challenge task description, rules, and tutorials,
-- Participant file and form submission tool,
-- Event forum with email notification system for new posts,
+- A cloud-based data science workspace to perform data science tasks in the cloud using Juptyer notebooks
+- Event specific announcement banners
+- Markdown document editor for challenge task description, rules, and tutorials
+- Participant file and form submission tool
+- Event forum with email notification system for new posts
+- Markdown click tracking for analytics
 - Submission scoring tools
-- Results management system including downloadable reports,
-- Notes feature for admins to keep track of issues.
-- Example features for experimental setups.
-- Interactive results dashboard,
-- Jupyter notebook web viewer to view submissions or example files directly in the app,
-- Integration with Qualtrics surveys.
+- Results management system including downloadable reports
+- Notes feature for admins to keep track of issues
+- Example features for experimental setups
+- Interactive results dashboard
+- Jupyter notebook web viewer to view submissions or example files directly in the app
+- Integration with Qualtrics surveys
 
 ## Platform Users
 
