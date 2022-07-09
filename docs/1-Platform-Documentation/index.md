@@ -15,7 +15,7 @@ The team uses GitHub (e) for version control, issue tracking, and project manage
 
 ## Platform Features
 
-Key platform features include:
+Key platform features include:-
 
 - A cloud-based data science workspace to perform data science tasks in the cloud using Juptyer notebooks
 - Event specific announcement banners
